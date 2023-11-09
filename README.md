@@ -22,6 +22,7 @@ Create a complete salon management platform using Next.js that can streamline op
 - **Customizable Service Menus**: Allow salons to create and customize their service offerings with descriptions, durations, and prices.
 - **Staff Training Module**: Include resources and scheduling for staff training and professional development within the platform.
 - **Marketing Tools**: Integrated tools for email campaigns, promotional offers, and social media integration to help salons attract and retain customers.
+- **GPT chatbot**: Add GPTs into the website for user integeration.
 
 ### Challenges and Considerations:
 
