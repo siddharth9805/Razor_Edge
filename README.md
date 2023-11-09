@@ -11,7 +11,6 @@ Create a complete salon management platform using Next.js that can streamline op
 - **Point of Sale (POS) System**: Integrate a POS system for in-salon sales, allowing customers to pay for services and products in person or online.
 - **Customer Relationship Management (CRM)**: Maintain detailed customer profiles, including service history, product preferences, and notes to offer personalized experiences.
 - **Automated Reminders and Notifications**: Send appointment confirmations, reminders, and follow-up messages automatically via email or SMS.
-- **Loyalty Program**: Implement a loyalty system to reward regular customers and encourage repeat business.
 - **Dynamic Reporting**: Provide salon owners with insights into sales, staff performance, customer retention, and more, using customizable reports.
 - **Mobile Optimization**: Ensure the platform is fully responsive for mobile devices, enabling customers to book appointments on the go.
 
