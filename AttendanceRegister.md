@@ -23,26 +23,25 @@ This attendance sheet is created to track the participation and presence of team
 
 ### Month of November, 2023
 
-| Date       | Contributor 1 | Contributor 2 | Contributor 3 |
-|------------|---------------|---------------|---------------|
-| 2023-11-09 |               |               |               |
-| 2023-11-14 |               |               |               |
-| 2023-11-16 |               |               |               |
-| 2023-11-21 |               |               |               |
-| 2023-11-23 |               |               |               |
-| 2023-11-28 |               |               |               |
-| 2023-11-30 |               |               |               |
-
+| Date       |  Siddharth | Nachiket | Shrey |
+|------------|------------|----------|-------|
+| 2023-11-09 |       X    |          |       |
+| 2023-11-14 |            |          |       |
+| 2023-11-16 |            |          |       |
+| 2023-11-21 |            |          |       |
+| 2023-11-23 |            |          |       |
+| 2023-11-28 |            |          |       |
+| 2023-11-30 |            |          |       |
 
 
 ### Month of December, 2023
 
-| Date       | Contributor 1 | Contributor 2 | Contributor 3 |
-|------------|---------------|---------------|---------------|
-| 2023-12-05 |               |               |               |
-| 2023-12-07 |               |               |               |
-| 2023-12-12 |               |               |               |
-| 2023-12-14 |               |               |               |
+ Date       |  Siddharth | Nachiket  | Shrey |
+|------------|------------|----------|-------|
+| 2023-12-05 |            |          |       |
+| 2023-12-07 |            |          |       |
+| 2023-12-12 |            |          |       |
+| 2023-12-14 |            |          |       |
 
 
 Your cooperation in maintaining accurate and up-to-date attendance is appreciated. If you have any questions or concerns, please don't hesitate to reach out.
