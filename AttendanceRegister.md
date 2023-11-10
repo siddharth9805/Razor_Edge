@@ -25,7 +25,7 @@ This attendance sheet is created to track the participation and presence of team
 
 | Date       |  Siddharth | Nachiket | Shrey |
 |------------|------------|----------|-------|
-| 2023-11-09 |       X    |          |       |
+| 2023-11-09 |       X    |          |   X   |
 | 2023-11-14 |            |          |       |
 | 2023-11-16 |            |          |       |
 | 2023-11-21 |            |          |       |
@@ -36,7 +36,7 @@ This attendance sheet is created to track the participation and presence of team
 
 ### Month of December, 2023
 
- Date       |  Siddharth | Nachiket  | Shrey |
+| Date       |  Siddharth | Nachiket | Shrey |
 |------------|------------|----------|-------|
 | 2023-12-05 |            |          |       |
 | 2023-12-07 |            |          |       |
