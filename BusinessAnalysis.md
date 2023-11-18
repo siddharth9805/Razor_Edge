@@ -102,7 +102,7 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 ### Loyalty
 - Satisfied clients return and recommend Hairy to others.
 
-##Hair & Co BKLYN [https://shop.hairandcobklyn.com]
+## Hair & Co BKLYN [https://shop.hairandcobklyn.com]
 ## 1. Competitive Analysis
 
 ### Archetype and Methods of Persuasion
