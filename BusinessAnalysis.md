@@ -52,5 +52,57 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 ### Loyalty
 - Continued use due to the app's reliability and effectiveness in enhancing their business.
 
+  
+
+ ## Hairy [https://hairy-wcopilot.webflow.io/]
+## 1. Competitive Analysis
+
+### Archetype and Methods of Persuasion
+- **Brand Archetype**: The Hairy salon presents itself as an experienced and expert service provider in the hair care industry【21†source】.
+- **Methods of Persuasion**:
+  - Emphasizing the unique hair experience and specialist knowledge【19†source】.
+  - Clear presentation of services like haircuts, coloring, and hairstyling【20†source】【22†source】.
+
+## 2. SWOT Analysis
+
+### Strengths
+- Long-standing reputation with over 24 years of experience【21†source】.
+- Diverse range of services catering to various hair care needs【20†source】.
+
+### Weaknesses
+- Limited online engagement or interactive features on the website.
+
+### Opportunities
+- Expansion into online booking and e-commerce for hair care products.
+- Utilization of digital marketing strategies to enhance online presence.
+
+### Threats
+- Strong competition from other established hair care and salon websites.
+- Changing customer preferences towards online services and products.
+
+## 3. Persona
+- **Name**: Kristin Watson, a regular client at Hairy salon.
+- **Characteristics**: Seeks professional and high-quality hair services.
+- **Needs**: A reliable salon that offers a variety of hair care services【23†source】.
+
+## 4. Customer Journey / Sales Funnel
+
+### Awareness
+- Potential clients learn about Hairy through online searches or word of mouth.
+
+### Interest
+- Clients explore the services offered and read client testimonials.
+
+### Decision
+- Considering the variety of services and pricing, clients choose Hairy for their hair care needs【20†source】【24†source】.
+
+### Action
+- Clients visit the salon for their selected services.
+
+### Loyalty
+- Satisfied clients return and recommend Hairy to others.
+
+  
+
 ## Conclusion
 The analysis of the following websites provide insights into effective strategies for a salon booking website, emphasizing the importance of user-friendliness, efficient management tools, and strong brand building. These elements will guide us with the development of our salon website for the project.
