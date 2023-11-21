@@ -28,7 +28,7 @@ This attendance sheet is created to track the participation and presence of team
 | 2023-11-09 |       X    |  X       |  X    |
 | 2023-11-14 |       X    |  X       |  X    |
 | 2023-11-16 |       X    |  X       |  X    |
-| 2023-11-21 |            |  X       |  X    |
+| 2023-11-21 |       X    |  X       |       |
 | 2023-11-23 |            |          |       |
 | 2023-11-28 |            |          |       |
 | 2023-11-30 |            |          |       |
