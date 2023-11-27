@@ -8,7 +8,7 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 ## 1. Competitive Analysis
 
 ### Archetype and Methods of Persuasion
-- **Brand Archetype**: theCut positions itself as a facilitator and enhancer for barber businesses, focusing on ease of use and efficiency.
+- **Brand Archetype**: Creator
 - **Methods of Persuasion**:
   - Simplicity in managing schedules and brand building【6†source】.
   - Features like digital payment, schedule management, and client reviews【7†source】.
