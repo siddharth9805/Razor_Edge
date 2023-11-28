@@ -123,5 +123,24 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 ### Loyalty
 - Ongoing engagement through product purchases and salon visits, fostered by the salon's strong local reputation and product range.
 
+### Cartel Hair Studio Analysis
+
+*Brand Archetype:* Cartel Hair Studio positions itself as a "Sage" archetype, focusing on expertise, knowledge-sharing, and community building within the beauty and grooming industry. This archetype is evident in their commitment to not just providing hair services but also fostering a sense of community and individual growth among professionals and clients.
+
+*SWOT Analysis:*
+- *Strengths:* Strong community orientation with diverse talents, offering a holistic transformation experience in hair and grooming services【21†source】.
+- *Weaknesses:* A niche market focus could limit broader appeal.
+- *Opportunities:* Potential for expanding their brand presence and engaging in industry-wide educational initiatives.
+- *Threats:* Competition from other high-end salons and changing industry trends.
+
+*Client Persona:* Alex - a New York resident seeking a holistic grooming experience, values personal relationships with stylists, and appreciates a diverse, inclusive environment.
+
+*Customer Journey:*
+1. *Awareness:* Learns about Cartel Hair Studio through its strong community presence and industry reputation.
+2. *Interest:* Attracted by the studio’s inclusive environment and holistic service offerings.
+3. *Decision:* Chooses Cartel Hair Studio for its commitment to individuality, comfort, and creativity in grooming services.
+4. *Action:* Experiences personalized grooming services and builds relationships with stylists.
+5. *Loyalty:* Returns for the quality service and the sense of community Cartel Hair Studio offers.
+
 ## Conclusion
 The analysis of the following websites provide insights into effective strategies for a salon booking website, emphasizing the importance of user-friendliness, efficient management tools, and strong brand building. These elements will guide us with the development of our salon website for the project.
