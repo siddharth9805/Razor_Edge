@@ -1,5 +1,5 @@
 
-# Salon Website Development User Stories
+# Salon Website Development Technical Issues
 Creating user stories at the Initiative and Epic level for a salon website project is a great approach to start with. These user stories will help us in understanding the functionalities and features that our website should have, based on the analysis of the mentioned competitive websites. Let's break it down:
 
 
