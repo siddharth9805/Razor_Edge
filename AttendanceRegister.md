@@ -31,14 +31,14 @@ This attendance sheet is created to track the participation and presence of team
 | 2023-11-21 |       X    |  X       |  X    |
 | 2023-11-23 |     THANKSGIVING HOLIDAY      |
 | 2023-11-28 |       X    |  X       |  X    |
-| 2023-11-30 |       X    |          |  X    |
+| 2023-11-30 |       X    |  X       |  X    |
 
 
 ### Month of December, 2023
 
 | Date       |  Siddharth | Nachiket | Shrey |
 |------------|------------|----------|-------|
-| 2023-12-05 |            |          |       |
+| 2023-12-05 |            |   X      |       |
 | 2023-12-07 |            |          |       |
 | 2023-12-12 |            |          |       |
 | 2023-12-14 |            |          |       |
