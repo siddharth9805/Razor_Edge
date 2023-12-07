@@ -38,8 +38,8 @@ This attendance sheet is created to track the participation and presence of team
 
 | Date       |  Siddharth | Nachiket | Shrey |
 |------------|------------|----------|-------|
-| 2023-12-05 |            |   X      |   X   |
-| 2023-12-07 |            |          |       |
+| 2023-12-05 |     X      |   X      |   X   |
+| 2023-12-07 |     X      |          |       |
 | 2023-12-12 |            |          |       |
 | 2023-12-14 |            |          |       |
 
