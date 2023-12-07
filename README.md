@@ -28,4 +28,4 @@ Create a complete salon management platform using Next.js that can streamline op
 - **Customization**: Allow salons to tailor the platform's look and functionalities to match their brand identity.
 
 ### Sample Design of website
-![DALL·E 2023-11-09 01 19 44 - Create a wide web design concept for a salon website  The design should feature a clean, modern aesthetic with a soothing color palette that includes ](https://github.com/siddharth9805/SSN_IS601/assets/32770034/b19e4572-0a9f-4415-a329-4abd420a1c1b)
+![DALL·E 2023-11-09 01 19 44 - Create a wide web design concept for a salon website  The design should feature a clean, modern aesthetic with a soothing color palette that includes ](https://github.com/siddharth9805/SSN_IS601/assets/32770034/75f3c543-2c47-420d-8149-fe7f1d9d0078)
