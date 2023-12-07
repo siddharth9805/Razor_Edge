@@ -1,7 +1,7 @@
 $primaryColor: #CCAD7E;
 $primaryDarkColor: #cda76e;
 $primaryDarkerColor: #d7a355;
-$primaryTextColor: #ffffff;
+$primaryTextColor: #cda76e;
 
 $colors: (
     "blue": #2196F3,
@@ -33,17 +33,17 @@ $colors: (
 :root {
     font-family:'Inter',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --surface-a:#ffffff;
+    --surface-a:#0e0e0e;
     --surface-b:#f8f9fa;
     --surface-c:#e9ecef;
     --surface-d:#dee2e6;
-    --surface-e:#ffffff;
-    --surface-f:#ffffff;
-    --text-color:#495057;
+    --surface-e:#0e0e0e;
+    --surface-f:#0e0e0e;
+    --text-color:#ffffff;
     --text-color-secondary:#6c757d;
     --primary-color:#2196F3;
-    --primary-color-text:#ffffff;
-    --surface-0: #ffffff;
+    --primary-color-text:#0e0e0e;
+    --surface-0: #0e0e0e;
     --surface-50: #FAFAFA;
     --surface-100: #F5F5F5;
     --surface-200: #EEEEEE;
@@ -68,11 +68,11 @@ $colors: (
     --inline-spacing:#{$inlineSpacing};
     --border-radius:#{$borderRadius};
     --surface-ground:#f8f9fa;
-    --surface-section:#ffffff;
-    --surface-card:#ffffff;
-    --surface-overlay:#ffffff;
+    --surface-section:#0e0e0e;
+    --surface-card:#0e0e0e;
+    --surface-overlay:#0e0e0e;
     --surface-border:#dee2e6;
-    --surface-hover:#e9ecef;
+    --surface-hover:#e2c79f;
     --focus-ring: #{$focusShadow};
     --maskbg: #{$maskBg};
     --highlight-bg: #{$highlightBg};
