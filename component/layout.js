@@ -1,11 +1,10 @@
 import { Menubar } from 'primereact/menubar';
 import React from 'react';
-import layoutstyle from '../component/css/layout.module.css';
 import Image from 'next/image';
+import styles from './css/layout.module.css';
 
 export default function Layout({children}){
-    const label= 'Razor Edge';
-    const logo=<Image src="/logo.png" alt="Logo" width={75} height={55}></Image>;
+    const logo=<Image src="/logo.png" alt="Logo" width={85} height={65}></Image>;
     const nav_items=[
         {
             id:'home',
@@ -26,19 +25,13 @@ export default function Layout({children}){
             id:'contactus',
             label:'Contact Us',
             url:'#contact-us'
-        },
-        {
-            id:'sign-in',
-            label:'Sign In',
-            url:'/authentication/signup'
         }
     ];
 
     return(
         <>
-            <div className='relative'>
-                <Menubar model={nav_items} className={`${layoutstyle.navbar} ${'flex justify-content-around border-noround border-none shadow-5 opacity-70 z-5 top-0'}`} start={logo}/>  
-            </div>
+            <Menubar model={nav_items} className={`${'flex justify-content-around border-noround border-none shadow-5 opacity-70 z-5 top-0'}`} start={logo}/>  
+            <main>{children}</main>
         </>
     )
 }
