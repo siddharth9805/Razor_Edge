@@ -6,6 +6,8 @@ import { Button } from 'primereact/button';
 export default function Footer(){
     const [email, setEmail] = React.useState('');
     const [isValidEmail, setIsValidEmail] = React.useState(true);
+    const subscribeTag= 'subscribe to our newsletter';
+    const watermarkTag= '© 2023 RAZORS EDGE Inc';
 
 
     const validateEmail = (email) => {
@@ -25,7 +27,7 @@ export default function Footer(){
 
     return(
         <div id='contact-us' className={`${'flex flex-column align-items-center justify-content-center p-4'} ${styles.bgColor}`}>
-            <p className={`${'text-center text-xl sm:text-3xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>subscribe to our newsletter</p>
+            <p className={`${'text-center text-xl sm:text-3xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>{subscribeTag}</p>
             <div className='flex flex-row w-full justify-content-center mb-4'>
                 <InputText value={email}  placeholder="Email" onChange={handleEmailChange} className={`${'w-7 sm:w-2 border-round-2xl text-white'} ${styles.inputarea} ${!isValidEmail && 'invalid-email'}`}/>
                 <Button label="Submit" className={`${'border-round-2xl bg-black-alpha-90 text-white'} ${styles.button}`} onClick={Mailchimp}/>
@@ -36,7 +38,7 @@ export default function Footer(){
                 <i className={`${"pi pi-whatsapp"} ${styles.icons}`}></i>
                 <i className={`${"pi pi-twitter"} ${styles.icons}`}></i>
             </div>         
-            <p className='text-center'>© 2023 RAZORS EDGE Inc</p>
+            <p className='text-center m-0'>{watermarkTag}</p>
         </div>
     )
 }
