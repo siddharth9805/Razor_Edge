@@ -154,7 +154,7 @@
 @mixin action-icon($enabled: true) {
     width: $actionIconWidth;
     height: $actionIconHeight;
-    color: $actionIconColor;
+    color: #000;
     border: $actionIconBorder;
     background: $actionIconBg;
     border-radius: $actionIconBorderRadius;

@@ -1,4 +1,10 @@
 .imagecontainer{
     display:block;
-    margin:auto
+    margin:auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.imagecontainer:hover {
+    transform: translateY(-12px); /* Moves the icon up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Creates the "lifted" look */
+  }
