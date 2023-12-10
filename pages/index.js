@@ -2,13 +2,19 @@ import Nav from '@/component/nav';
 import GoogleAnalytics from '@/component/GoogleAnalytics';
 import CookieBanner from '@/component/CookieBanner';
 import Home from '@/component/home';
+import Footer from '@/component/footer';
+import styles from '@/styles/utils.module.css'
 
 export default function Salon() {
   return(
     <>
     <GoogleAnalytics GA_MEASUREMENT_ID='G-0000000000'/>
-    <Nav />
-    <Home />
+    <div className={styles.backgroundFrame}>
+      <Nav />
+      <Home />
+    </div>
+    <Footer />
+    <CookieBanner/>
     </>
   )
 }

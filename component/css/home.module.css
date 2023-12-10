@@ -16,18 +16,12 @@
   
   .herocontainer{
     height: calc(100vh - 85px);
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .Herotext {
     color: var(--Primary-Font-Color, rgba(194, 154, 76, 0.9));
-    font-family: Inter;
+    font-family: Inter,sans-serif;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.5);
-  }
-
-  .text-background {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    padding: 10px; /* Or as needed */
   }
 
   .book_button:hover{
