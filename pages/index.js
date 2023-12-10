@@ -4,6 +4,7 @@ import CookieBanner from '@/component/CookieBanner';
 import Home from '@/component/home';
 import Footer from '@/component/footer';
 import styles from '@/styles/utils.module.css'
+import Main from '@/component/service';
 
 export default function Salon() {
   return(
@@ -13,8 +14,9 @@ export default function Salon() {
       <Nav />
       <Home />
     </div>
+    <Main />
     <Footer />
-    <CookieBanner/>
+    {/* <CookieBanner/> */}
     </>
   )
 }

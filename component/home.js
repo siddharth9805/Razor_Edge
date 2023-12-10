@@ -6,7 +6,7 @@ export default function Home(){
 
     return (
         <>
-            <div className={styles.backgroundFrame}>
+            <div id='home' className={styles.backgroundFrame}>
                 <video autoPlay muted loop id="backgroundVideo" className={styles.backgroundVideo}>
                         <source src="/salon.mp4" type="video/mp4" />
                 </video>
