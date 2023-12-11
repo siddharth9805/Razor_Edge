@@ -1,6 +1,6 @@
 import { Menubar } from 'primereact/menubar';
 import React from 'react';
-import Image from 'next/image';
+import { Image } from 'primereact/image';
 
 export default function Nav(){
     const logo=<Image src="/logoicon.png" alt="Logo" width={85} height={65}></Image>;
