@@ -35,7 +35,7 @@ export default function Footer(){
               body: formData,
               mode: 'no-cors', // keep this to avoid CORS issues
             });
-            toast.current.show({severity:'success', summary: 'Success', detail: 'Subscribed Successfully', life: 3000});
+            toast.current.show({severity:'success', summary: 'Success', detail: 'Subscription Successfully', life: 3000});
           } catch (error) {
             toast.current.show({severity:'error', summary: 'Error', detail: 'Subscription failed', life: 3000});
           }
