@@ -29,7 +29,7 @@ export default function Nav(){
 
     return(
         <>
-            <Menubar model={nav_items} className={`${'flex justify-content-around border-noround border-none shadow-5 opacity-70 z-5 sticky top-0'}`} start={logo}/>  
+            <Menubar model={nav_items} className={`${'flex justify-content-around border-noround border-none shadow-5 opacity-70 z-5 fixed w-full top-0'}`} start={logo}/>  
         </>
     )
 }

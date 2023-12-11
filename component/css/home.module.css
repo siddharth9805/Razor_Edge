@@ -4,7 +4,7 @@
     position: fixed; /* or absolute */
     right: 0;
     bottom: 0;
-    min-width: 100vh; 
+    min-width: 100vh;
     min-height: 100vh;
     width: auto; 
     height: auto;
@@ -15,7 +15,7 @@
   }
   
   .herocontainer{
-    height: calc(100vh - 85px);
+    height: calc(100vh);
   }
 
   .Herotext {
