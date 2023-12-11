@@ -36,6 +36,7 @@ export default function Footer(){
               mode: 'no-cors', // keep this to avoid CORS issues
             });
             toast.current.show({severity:'success', summary: 'Success', detail: 'Subscription Successfully', life: 3000});
+            setEmail('')
           } catch (error) {
             toast.current.show({severity:'error', summary: 'Error', detail: 'Subscription failed', life: 3000});
           }
