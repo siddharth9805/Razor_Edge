@@ -20,15 +20,29 @@ export default function Footer(){
         setEmail(e.target.value);
     }
 
-    const Mailchimp =() => {
-        const result=validateEmail(email);
-        if (result){
-            toast.current.show({severity:'success', summary: 'Success', detail:'Message Content', life: 3000});
+    const Mailchimp = async () => {
+        const result = validateEmail(email);
+        if (result) {
+          const formData = new FormData();
+          formData.append('EMAIL', email);
+          formData.append('b_b08d6dbad505ad420fd015fa5_d0b78b3b60', '');
+      
+          const mailchimpUrl = 'https://app.us21.list-manage.com/subscribe/post?u=b08d6dbad505ad420fd015fa5&id=d0b78b3b60&f_id=00d4e6e6f0';
+      
+          try {
+            const response = await fetch(mailchimpUrl, {
+              method: 'POST',
+              body: formData,
+              mode: 'no-cors', // keep this to avoid CORS issues
+            });
+            toast.current.show({severity:'success', summary: 'Success', detail: 'Subscribed Successfully', life: 3000});
+          } catch (error) {
+            toast.current.show({severity:'error', summary: 'Error', detail: 'Subscription failed', life: 3000});
+          }
+        } else {
+          toast.current.show({severity:'error', summary: 'Error', detail: 'Invalid email', life: 3000});
         }
-        else{
-            toast.current.show({severity:'error', summary: 'Error', detail:'invaild', life: 3000});
-        }
-    }
+      };      
 
     return(
         <div id='contact-us' className={`${'flex flex-column align-items-center justify-content-center p-4'} ${styles.bgColor}`}>
