@@ -70,7 +70,7 @@ export default function Main(){
                             <>
                                 <div key={id} className={`${'col-12 md:col-4 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative'}`}>
                                     <Image src={path} alt={alt} className={`${styles.testamonialimage} ${'absolute'}`}></Image>
-                                    <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-15rem text-black-alpha-90 w-9 mb-5'} ${styles.testamonialarea}`}>{message}</div>
+                                    <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-15rem text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}>{message}</div>
                                 </div>
                             </>
                         )
