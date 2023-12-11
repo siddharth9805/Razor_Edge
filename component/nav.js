@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function Nav(){
-    const logo=<Image src="/logo.png" alt="Logo" width={85} height={65}></Image>;
+    const logo=<Image src="/logoicon.png" alt="Logo" width={85} height={65}></Image>;
     const nav_items=[
         {
             id:'home',
