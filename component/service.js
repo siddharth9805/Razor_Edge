@@ -39,7 +39,7 @@ export default function Main(){
 
     return (
         <div id='service' className={`${'flex flex-column justify-content-center align-content-center surface-ground relative bottom-0 left-0 top-0'} ${styles.container}`}>
-            <h1 className={`${'sm:text-6xl text-center text-black-alpha-90 uppercase mt-7 mb-5'}`}>{headers[0]}</h1>
+            <h1 className={`${'sm:text-6xl text-center text-black-alpha-90 uppercase mt-7 sm:mt-8 sm:pt-4 mb-5'}`}>{headers[0]}</h1>
             <div className={`${'grid w-full mt-2 mb-2 sm:mb-7 sm:mt-5'}`}>
                 {
                     ServiceList.map(({id,path,alt,service_name}) => (
@@ -68,13 +68,13 @@ export default function Main(){
                {
                 TestamonialList.map(({id,path,alt,message}) => (
                             <>
-                                <div key={id} className={`${'col-12 md:col-4 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative'}`}>
+                                <div key={id} className={`${'col-12 md:col-8 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative sm:pl-8 '}`}>
                                     <Image src={path} alt={alt} className={`${styles.testamonialimage} ${'absolute'}`}></Image>
                                     <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-15rem text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}>{message}</div>
                                 </div>
                             </>
                         )
-                    )
+                    )   
                }
             </div>
         </div>

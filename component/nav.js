@@ -2,18 +2,18 @@ import { Menubar } from 'primereact/menubar';
 import React from 'react';
 import { Image } from 'primereact/image';
 
-export default function Nav(){
+export default function Nav({onMenuClick}){
     const logo=<Image src="/logoicon.png" alt="Logo" width={85} height={65}></Image>;
     const nav_items=[
         {
             id:'home',
             label:'Home Page',
-            url:'#home',
+            command: () => onMenuClick('home'),
         },
         {
             id:'services',
             label:'Services',
-            url:'#services'
+            command: () => onMenuClick('services')
         },
         {
             id:'appointment',
@@ -23,7 +23,7 @@ export default function Nav(){
         {
             id:'contactus',
             label:'Contact Us',
-            url:'#contact-us'
+            command: () => onMenuClick('contact-us')
         }
     ];
 
