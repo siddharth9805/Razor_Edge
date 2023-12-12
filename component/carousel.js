@@ -3,18 +3,18 @@ import styles from './css/carousel.module.css';
 
 export default function MyCarouse(){
     const items = [
-        <img src="/demo.png" alt="Adidas" />,
-        <img src="/demo.png" alt="Porsche" />,
-        <img src="/demo.png" alt="Volvo" />,
-        <img src="/demo.png" alt="Adidas" />,
-        <img src="/demo.png" alt="Porsche" />,
-        <img src="/demo.png" alt="Volvo" />,
-        <img src="/demo.png" alt="Porsche" />,
-        <img src="/demo.png" alt="Volvo" />,
-        <img src="/demo.png" alt="Adidas" />,
-        <img src="/demo.png" alt="Porsche" />,
-        <img src="/demo.png" alt="Volvo" />,
-        <img src="/demo.png" alt="Adidas" />,
+        <img src="/product_1.png" alt="product_1" />,
+        <img src="/product_6.png" alt="product_6" />,
+        <img src="/product_7.png" alt="product_7" />,
+        <img src="/product_8.png" alt="product_8" />,
+        <img src="/product_4.png" alt="product_4" />,
+        <img src="/product_5.png" alt="product_5" />,
+        <img src="/product_1.png" alt="product_1" />,
+        <img src="/product_6.png" alt="product_6" />,
+        <img src="/product_7.png" alt="product_7" />,
+        <img src="/product_8.png" alt="product_8" />,
+        <img src="/product_4.png" alt="product_4" />,
+        <img src="/product_5.png" alt="product_5" />,
     ];
 
     return (
