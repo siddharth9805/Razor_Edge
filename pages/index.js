@@ -9,14 +9,14 @@ import Main from '@/component/service';
 export default function Salon() {
   return(
     <>
-    <GoogleAnalytics GA_MEASUREMENT_ID='G-0000000000'/>
+    <GoogleAnalytics GA_MEASUREMENT_ID='G-KP0KHV37L5'/>
     <div className={styles.backgroundFrame}>
       <Nav />
       <Home />
     </div>
     <Main />
     <Footer />
-    {/* <CookieBanner/> */}
+    <CookieBanner/>
     </>
   )
 }
