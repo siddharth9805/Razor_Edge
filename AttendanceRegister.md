@@ -41,7 +41,6 @@ This attendance sheet is created to track the participation and presence of team
 | 2023-12-05 |     X      |   X      |   X   |
 | 2023-12-07 |     X      |   X      |   X   |
 | 2023-12-12 |            |   X      |   X   |
-| 2023-12-14 |            |          |       |
 
 
 Your cooperation in maintaining accurate and up-to-date attendance is appreciated. If you have any questions or concerns, please don't hesitate to reach out.

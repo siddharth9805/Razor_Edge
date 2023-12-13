@@ -4,10 +4,6 @@
 Create a complete salon management platform using Next.js that can streamline operations, enhance the customer experience, and offer robust analytics and reporting for salon owners.
 
 ### Key Features:
-
-- **Client Scheduling**: Customers can book appointments online through a sleek, user-friendly interface with real-time availability and the ability to choose their preferred stylist or service.
-- **Staff Management**: Manage staff profiles, and schedules, and assign appointments based on availability and speciality.
-- **Inventory Tracking**: Keep track of salon products and supplies, with alerts when items need restocking.
 - **Point of Sale (POS) System**: Integrate a POS system for in-salon sales, allowing customers to pay for services and products in person or online.
 - **Customer Relationship Management (CRM)**: Maintain detailed customer profiles, including service history, product preferences, and notes to offer personalized experiences.
 - **Automated Reminders and Notifications**: Send appointment confirmations, reminders, and follow-up messages automatically via email or SMS.
@@ -19,7 +15,6 @@ Create a complete salon management platform using Next.js that can streamline op
 - **Customizable Service Menus**: Salons can create and customize their service offerings with descriptions, durations, and prices.
 - **Data Privacy**: Implement strong security measures to protect sensitive client and business information.
 - **Marketing Tools**: Integrated tools for email campaigns, promotional offers, and social media integration to help salons attract and retain customers.
-- **GPT chatbot**: Add GPTs to the website for user integration.
 
 ### Challenges and Considerations:
 
