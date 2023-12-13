@@ -16,11 +16,6 @@ export default function Nav({onMenuClick}){
             command: () => onMenuClick('services')
         },
         {
-            id:'appointment',
-            label:'Appointment',
-            url:'/appointment'
-        },
-        {
             id:'contactus',
             label:'Contact Us',
             command: () => onMenuClick('contact-us')
