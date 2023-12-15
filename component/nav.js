@@ -7,17 +7,22 @@ export default function Nav({onMenuClick}){
     const nav_items=[
         {
             id:'home',
-            label:'Home Page',
+            label:'HOME PAGE',
             command: () => onMenuClick('home'),
         },
         {
+            id:'about',
+            label:'ABOUT US',
+            command: () => onMenuClick('about'),
+        },
+        {
             id:'services',
-            label:'Services',
+            label:'SERVICES',
             command: () => onMenuClick('services')
         },
         {
             id:'contactus',
-            label:'Contact Us',
+            label:'CONTACT US',
             command: () => onMenuClick('contact-us')
         }
     ];
