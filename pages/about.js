@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useRouter } from 'next/router';
+import { Image } from 'primereact/image';
 import Nav from '@/component/nav';
 import Footer from '@/component/footer';
 import styles from '@/styles/about.module.css';
@@ -44,7 +45,9 @@ export default function About() {
                             <p>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
                         </div>
                         <div className={styles.storyContainer}>
-                            <div className={styles.storyImage}></div>
+                            <div className={styles.storyImage}>
+                                <Image src='/public/story-img' alt='story-img' className=''/>
+                            </div>
                             <div className={styles.storyContent}>
                                 <p className={styles.storyHeading}>Our Story</p>
                                 <p className={styles.storySubHeading}>Nurturing Beauty, Empowering Confidence</p>
@@ -57,10 +60,14 @@ export default function About() {
                                 <p className={styles.visionSubHeading}>Elevating Beauty Beyond Asthetics</p>
                                 <p className={styles.visionContent}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
                             </div>
-                            <div className={styles.visionImage}></div>
+                            <div className={styles.visionImage}>
+                                <Image src='/public/vision-img' alt='vision-img' className=''/>
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.rightSection}></div>
+                    <div className={styles.rightSection}>
+                        <Image src='/public/about-img' alt='about-img' className=''/>
+                    </div>
                 </div>
                 <div ref={contactUsRef}><Footer/></div>
             </div>
