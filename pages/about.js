@@ -45,15 +45,22 @@ export default function About() {
                         </div>
                         <div className={styles.storyContainer}>
                             <div className={styles.storyImage}></div>
-                            <div className={styles.storyContent}></div>
+                            <div className={styles.storyContent}>
+                                <p className={styles.storyHeading}>Our Story</p>
+                                <p className={styles.storySubHeading}>Nurturing Beauty, Empowering Confidence</p>
+                                <p className={styles.storyContent}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
+                            </div>
                         </div>
                         <div className={styles.visionContainer}>
-                            <div className={styles.visionContent}></div>
+                            <div className={styles.visionContent}>
+                                <p className={styles.visionHeading}>Our Vision</p>
+                                <p className={styles.visionSubHeading}>Elevating Beauty Beyond Asthetics</p>
+                                <p className={styles.visionContent}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
+                            </div>
                             <div className={styles.visionImage}></div>
                         </div>
                     </div>
                     <div className={styles.rightSection}></div>
-
                 </div>
                 <div ref={contactUsRef}><Footer/></div>
             </div>
