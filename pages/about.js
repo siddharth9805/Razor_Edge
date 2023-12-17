@@ -61,16 +61,16 @@ export default function About() {
                             </div>
                         </div>
                         
-                        <div id='visionSectionContainer' className={styles.visionContainer}>
-                            <div id='visionContentContainer' className={styles.visionContent}>
+                        <div id='visionSectionContainer' className="grid ">
+                            <div id='visionContentContainer' className={`col-8 `}>
                                 <p id='visionTitle' className={styles.visionHeading}>Our Vision</p>
                                 <p id='visionSubTitle' className={styles.visionSubHeading}>Elevating Beauty Beyond Asthetics</p>
                                 <p id='visionContext' className={styles.visionContent}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
                             </div>
-                            <div id='visionImage' className={styles.visionImage}>
-                                <Image id='visionRelatedImage' src='/public/vision-img' alt='vision-img' className=''/>
+                            <div id='visionImage' className={`col-4 mt-7`}>
+                                <Image id='visionRelatedImage' src='/vision-img.png' alt='vision-img' className=''/>
                             </div>
-                        </div>
+                        </div>   
                     </div>
                     <div id='rightSectionContainer' className={styles.rightSection}>
                         <Image id='rightSectionImage' src='/public/about-img' alt='about-img' className=''/>
