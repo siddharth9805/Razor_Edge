@@ -39,6 +39,7 @@ export default function CookieBanner(){
     }, [cookieConsent]);
 
     return (
+        // Restructuring Cookie Banner and its Content as per Team Suggestions
         <div className={`${`${cookieConsent ? "hidden" : "flex"} justify-content-center align-items-center flex-column w-full fixed left-0 right-0`}  ${styles.CBContainer}`}>
             <p>This site uses cookies to measure and improve your performance.</p>
             <div className={`${'flex justify-content-around w-4'} ${styles.CBButtons}`}>
