@@ -6,8 +6,8 @@ import { Toast } from 'primereact/toast';
 
 export default function Footer(){
     const [email, setEmail] = React.useState('');
-    const subscribeTag= 'subscribe to our newsletter';
-    const watermarkTag= '© 2023 RAZORS EDGE Inc';
+    const subscribeTag= 'subscribe now for irresistible offers!';
+    const watermarkTag= '© 2023 RAZOR EDGE Inc';
     const toast = React.useRef(null);
 
 
@@ -48,18 +48,18 @@ export default function Footer(){
     return(
         <div id='contact-us' className={`${'flex flex-column align-items-center justify-content-center p-4'} ${styles.bgColor}`}>
             <Toast ref={toast} />
-            <p className={`${'text-center text-xl sm:text-3xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>{subscribeTag}</p>
+            <p id='footerHeading' className={`${'text-center text-xl sm:text-3xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>{subscribeTag}</p>
             <div className='flex flex-row w-full justify-content-center mb-4'>
-                <InputText value={email}  placeholder="Email" onChange={getemailvalue} className={`${'w-7 sm:w-2 border-round-2xl text-white'} ${styles.inputarea}`}/>
-                <Button label="Submit" className={`${'border-round-xl sm:border-round-2xl bg-black-alpha-90 text-white'} ${styles.button}`} onClick={Mailchimp}/>
+                <InputText id='footerInputEmailAdd' value={email}  placeholder="Email" onChange={getemailvalue} className={`${'w-7 sm:w-2 border-round-2xl text-white'} ${styles.inputarea}`}/>
+                <Button id='footerSubmitBTN' label="Submit" className={`${'border-round-xl sm:border-round-2xl bg-black-alpha-90 text-white'} ${styles.button}`} onClick={Mailchimp}/>
             </div> 
             <div className="flex flex-row w-7 justify-content-around sm:w-3 mb-4">
-                <i className={`${"pi pi-facebook"} ${styles.icons}`}></i>
-                <i className={`${"pi pi-instagram"} ${styles.icons}`}></i>
-                <i className={`${"pi pi-whatsapp"} ${styles.icons}`}></i>
-                <i className={`${"pi pi-twitter"} ${styles.icons}`}></i>
+                <i id='footerSMIconFacebbok' className={`${"pi pi-facebook"} ${styles.icons}`}></i>
+                <i id='footerSMIconInstagram' className={`${"pi pi-instagram"} ${styles.icons}`}></i>
+                <i id='footerSMIconWhatsApp' className={`${"pi pi-whatsapp"} ${styles.icons}`}></i>
+                <i id='footerSMIconTwitter' className={`${"pi pi-twitter"} ${styles.icons}`}></i>
             </div>         
-            <p className='text-center m-0'>{watermarkTag}</p>
+            <p id='RECopywriteText' className='text-center m-0'>{watermarkTag}</p>
         </div>
     )
 }

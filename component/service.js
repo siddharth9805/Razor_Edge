@@ -10,10 +10,10 @@ export default function Main(){
     const headers =['Service','READ WHAT OTHERS HAVE TO SAY'];
 
     const ServiceList=[
-        {id:"image_1",path:"/service_image_1.png",alt:"service_card_1", service_name:"HairWash"},
-        {id:"image_2",path:"/service_image_2.png",alt:"service_card_2", service_name:"Facial"},
-        {id:"image_3",path:"/service_image_3.png",alt:"service_card_3", service_name:"Skin Treatment"},
-        {id:"image_4",path:"/service_image_4.png",alt:"service_card_4", service_name:"Hair Treatment"},
+        {id:"service1", path:"/service_image_1.png", alt:"service_card_1", service_name:"HairWash"},
+        {id:"service2", path:"/service_image_2.png", alt:"service_card_2", service_name:"Facial"},
+        {id:"service3", path:"/service_image_3.png", alt:"service_card_3", service_name:"Skin Treatment"},
+        {id:"service4", path:"/service_image_4.png", alt:"service_card_4", service_name:"Hair Treatment"},
     ];
 
     const TestamonialList=[
@@ -55,7 +55,7 @@ export default function Main(){
                     )
                 }
             </div>
-            <Dialog header={services} visible={visible} className='w-11 sm:w-6' onHide={() => {setVisible(false)}}>
+            <Dialog id='serviceModal' header={services} visible={visible} className='w-11 sm:w-6' onHide={() => {setVisible(false)}}>
                 <p className="text-black-alpha-90">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

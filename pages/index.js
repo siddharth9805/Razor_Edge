@@ -5,19 +5,31 @@ import styles from '@/styles/utils.module.css'
 import Main from '@/component/service';
 import MyCarousel from '@/component/carousel';
 import React, { useRef } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Salon() {
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
   const contactUsRef = useRef(null);
+  const router = useRouter();
 
   const onMenuClick = (sectionId) => {
-    let ref;
-    if (sectionId === 'home') ref = homeRef;
-    if (sectionId === 'services') ref = servicesRef;
-    if (sectionId === 'contact-us') ref = contactUsRef;
-
-    ref?.current?.scrollIntoView({ behavior: 'smooth' });
+    switch (sectionId) {
+        case 'home':
+          router.push('/').then(() => homeRef?.current?.scrollIntoView({ behavior: 'smooth' }));
+            break;
+        case 'about':
+            router.push('/about');
+            break;
+        case 'services':
+          router.pathname !== '/'
+          ? router.push('/').then(() => servicesRef?.current?.scrollIntoView({ behavior: 'smooth' }))
+          : servicesRef?.current?.scrollIntoView({ behavior: 'smooth' });
+        break;
+        case 'contact-us':  
+            contactUsRef?.current?.scrollIntoView({ behavior: 'smooth' });
+            break;
+    }
   };
 
   return(
