@@ -41,11 +41,11 @@ export default function CookieBanner(){
     return (
         // Restructuring Cookie Banner and its Content as per Team Suggestions
         <div className={`${`${cookieConsent ? "hidden" : "flex"} justify-content-center align-items-center flex-column w-full fixed left-0 right-0`}  ${styles.CBContainer}`}>
-            <p>This site uses cookies to measure and improve your performance.</p>
-            <div className={`${'flex justify-content-around w-4'} ${styles.CBButtons}`}>
-                <Button label="Opt-Out" icon="" onClick={() => setCookieConsent(false)} />
-                <Button label="Details" icon="" />
-                <Button label="Accept" loading={loading} onClick={() => setCookieConsent(true)} />
+            <p id='CBContent'>This site uses cookies to measure and improve your performance.</p>
+            <div id='CBButtonContainer' className={`${'flex justify-content-around w-4'} ${styles.CBButtons}`}>
+                <Button id='CB_decline_button1' label="Opt-Out" icon="" onClick={() => setCookieConsent(false)} />
+                <Button id='CB_detail_button2' label="Details" icon="" />
+                <Button id='CB_accept_button3' label="Accept" loading={loading} onClick={() => setCookieConsent(true)} />
             </div>
         </div>
     )}
