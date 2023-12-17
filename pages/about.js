@@ -36,40 +36,48 @@ export default function About() {
                 <div className={styles.backgroundFrame}>
                     <Nav onMenuClick={onMenuClick} />
                 </div>
-                <div className={styles.aboutContainer}>
-                    <div className={styles.leftSection}>
-                        <div className={styles.headerContent}>
-                            <p>Hello ! Welcome to</p>
-                            <h1>Razor Edge</h1>
-                            <p>Where your hair journey meets our masterful artistry !!</p>
-                            <p>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
-                        </div>
-                        <div className={styles.storyContainer}>
-                            <div className={styles.storyImage}>
-                                <Image src='/public/story-img' alt='story-img' className=''/>
+
+                <div id='AboutPageContainer' className="grid nested-grid mt-8">
+                    <div id='leftSectionContainer' className="col-5 col-offset-1">
+                        <div className="grid">
+                            <div id='leftHeaderContainer' className="col-6 mt-4">
+                                    <p id='aboutTitle'>Hello ! Welcome to</p>
+                                    <h1 id='aboutSiteName'>Razor Edge</h1>
                             </div>
-                            <div className={styles.storyContent}>
-                                <p className={styles.storyHeading}>Our Story</p>
-                                <p className={styles.storySubHeading}>Nurturing Beauty, Empowering Confidence</p>
-                                <p className={styles.storyContent}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
+                            <div id='leftHeaderContent' className="col-12 -mt-4">
+                                <p id='aboutContent'>Where your hair journey meets our masterful artistry !!</p>
+                                <p id='aboutContent'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
                             </div>
                         </div>
-                        <div className={styles.visionContainer}>
-                            <div className={styles.visionContent}>
-                                <p className={styles.visionHeading}>Our Vision</p>
-                                <p className={styles.visionSubHeading}>Elevating Beauty Beyond Asthetics</p>
-                                <p className={styles.visionContent}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
+                        
+                        <div id='storySectionContainer' className={`grid mt-1`}>
+                            <div id='storyImage' className={`col-4 mt-6`}>
+                                <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className=''/>
                             </div>
-                            <div className={styles.visionImage}>
-                                <Image src='/public/vision-img' alt='vision-img' className=''/>
+                            <div id='storyContentContainer' className={`col-8`}>
+                                <p id='storyTitle' className={`text-yellow-200 text-2xl {styles.storyHeading}`}>Our Story</p>
+                                <p id='storySubTitle' className={styles.storySubHeading}>Nurturing Beauty, Empowering Confidence</p>
+                                <p id='storyContext' className={`font-light	${styles.storyContent}`}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
                             </div>
                         </div>
+                        
+                        <div id='visionSectionContainer' className="grid ">
+                            <div id='visionContentContainer' className={`col-8 `}>
+                                <p id='visionTitle' className={`text-yellow-200 text-2xl ${styles.visionHeading}`}>Our Vision</p>
+                                <p id='visionSubTitle' className={styles.visionSubHeading}>Elevating Beauty Beyond Asthetics</p>
+                                <p id='visionContext' className={`font-light ${styles.visionContent}`}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
+                            </div>
+                            <div id='visionImage' className={`col-4 mt-7`}>
+                                <Image id='visionRelatedImage' src='/vision-img.png' alt='vision-img' className=''/>
+                            </div>
+                        </div>   
                     </div>
-                    <div className={styles.rightSection}>
-                        <Image src='/public/about-img' alt='about-img' className=''/>
+                    
+                    <div id='rightSectionContainer' className=" col-4 mt-7 border-round-sm h-full">
+                        <Image id='rightSectionImage' src='/about-img.png' alt='about-img' className={`${styles.rightSectionImg}`}/>
                     </div>
                 </div>
-                <div ref={contactUsRef}><Footer/></div>
+                <div id='footerSection' ref={contactUsRef}><Footer/></div>
             </div>
         </>
     )

@@ -35,13 +35,13 @@ export default function Salon() {
   return(
     <>
     <div className='overflow-x-hidden'>
-      <div className={styles.backgroundFrame}>
-        <Nav onMenuClick={onMenuClick} />
-        <div ref={homeRef}><Home /></div>
+      <div id='videoBGContainer' className={styles.backgroundFrame}>
+        <Nav id='navbar' onMenuClick={onMenuClick} />
+        <div id='heroSection' ref={homeRef}><Home /></div>
       </div>
-      <MyCarousel />
-        <div ref={servicesRef}><Main /></div>
-        <div ref={contactUsRef}><Footer /></div>
+      <MyCarousel id='brandSliderSection'/>
+        <div id='serviceSection' ref={servicesRef}><Main /></div>
+        <div id='footerSection' ref={contactUsRef}><Footer /></div>
     </div>
     </>
   )
