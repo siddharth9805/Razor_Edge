@@ -72,8 +72,9 @@ export default function About() {
                             </div>
                         </div>   
                     </div>
-                    <div id='rightSectionContainer' className={styles.rightSection}>
-                        <Image id='rightSectionImage' src='/public/about-img' alt='about-img' className=''/>
+                    
+                    <div id='rightSectionContainer' className=" col-4 mt-8 border-round-sm h-full">
+                        <Image id='rightSectionImage' src='/about-img.png' alt='about-img' className={`${styles.rightSectionImg}`}/>
                     </div>
                 </div>
                 <div id='footerSection' ref={contactUsRef}><Footer/></div>
