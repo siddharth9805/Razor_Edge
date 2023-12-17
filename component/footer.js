@@ -6,8 +6,8 @@ import { Toast } from 'primereact/toast';
 
 export default function Footer(){
     const [email, setEmail] = React.useState('');
-    const subscribeTag= 'subscribe to our newsletter';
-    const watermarkTag= '© 2023 RAZORS EDGE Inc';
+    const subscribeTag= 'subscribe now for irresistible offers!';
+    const watermarkTag= '© 2023 RAZOR EDGE Inc';
     const toast = React.useRef(null);
 
 

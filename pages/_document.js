@@ -8,6 +8,7 @@ export default function Document() {
           rel="stylesheet" 
       />
       <Head />
+      <title>Razor Edge</title>
       <body className='m-0'>
         <Main />
         <NextScript />
