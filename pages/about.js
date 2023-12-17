@@ -36,24 +36,31 @@ export default function About() {
                 <div className={styles.backgroundFrame}>
                     <Nav onMenuClick={onMenuClick} />
                 </div>
-                <div id='AboutPageContainer' className={styles.aboutContainer}>
-                    <div id='leftSectionContainer' className={styles.leftSection}>
-                        <div id='leftHeaderContainer' className={styles.leftheaderContentContainer}>
-                            <p id='aboutTitle'>Hello ! Welcome to</p>
-                            <h1 id='aboutSiteName'>Razor Edge</h1>
-                            <p id='aboutContent'>Where your hair journey meets our masterful artistry !!</p>
-                            <p id='aboutContent'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
-                        </div>
-                        <div id='storySectionContainer' className={styles.storyContainer}>
-                            <div id='storyImage' className={styles.storyImage}>
-                                <Image id='storyRelatedImage' src='/public/story-img' alt='story-img' className=''/>
+
+                <div id='AboutPageContainer' className="grid nested-grid mt-8">
+                    <div id='leftSectionContainer' className="col-5 col-offset-1">
+                        <div className="grid">
+                            <div id='leftHeaderContainer' className="col-6 mt-5">
+                                    <p id='aboutTitle'>Hello ! Welcome to</p>
+                                    <h1 id='aboutSiteName'>Razor Edge</h1>
                             </div>
-                            <div id='storyContentContainer' className={styles.storyContent}>
+                            <div id='leftHeaderContent' className="col-12 ">
+                                <p id='aboutContent'>Where your hair journey meets our masterful artistry !!</p>
+                                <p id='aboutContent'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
+                            </div>
+                        </div>
+                        
+                        <div id='storySectionContainer' className={`grid `}>
+                            <div id='storyImage' className={`col-4 mt-6`}>
+                                <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className=''/>
+                            </div>
+                            <div id='storyContentContainer' className={`col-8`}>
                                 <p id='storyTitle' className={styles.storyHeading}>Our Story</p>
                                 <p id='storySubTitle' className={styles.storySubHeading}>Nurturing Beauty, Empowering Confidence</p>
                                 <p id='storyContext' className={styles.storyContent}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
                             </div>
                         </div>
+                        
                         <div id='visionSectionContainer' className={styles.visionContainer}>
                             <div id='visionContentContainer' className={styles.visionContent}>
                                 <p id='visionTitle' className={styles.visionHeading}>Our Vision</p>
