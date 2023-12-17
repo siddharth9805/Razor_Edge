@@ -8,6 +8,7 @@ export default function Main(){
     const [services,setServices] = React.useState('');
     const [hoverStates, setHoverStates] = React.useState({});
     const headers =['Service','READ WHAT OTHERS HAVE TO SAY'];
+    const rating = <Image src='/5Star.png' alt='5start_rating'/>
 
     const ServiceList=[
         {id:"service1", path:"/service_image_1.png", alt:"service_card_1", service_name:"HairWash"},
@@ -19,18 +20,21 @@ export default function Main(){
     const TestamonialList=[
         {
             id:"profile_1",
+            name: "Isla Bennett",
             path:"/profile_1.png",
             alt:"profile_1",
             message:`“Since I started using RE, I truly adore the how my hair feels! It smells amazing, and it's softer and healthier.”`
         },
         {
             id:"profile_2",
+            name: "Aria Monroe",
             path:"/profile_2.png",
             alt:"profile_2",
             message:`“I've never had better hair care than this in my entire life. Game changer. I promise never to look back at other shit!”`
         },
         {
             id:"profile_3",
+            name: "Sera Harper",
             path:"/profile_3.png",
             alt:"profile_1",
             message:`“Every product I have tried, I adore. They've all helped to create amazing curl, sheen, and volume.”`
@@ -66,11 +70,15 @@ export default function Main(){
             <h1 className={`${'sm:text-6xl text-center text-black-alpha-90 uppercase mt-7 mb-7'}`}>{headers[1]}</h1>
             <div className='grid w-full mb-2 mt-2 sm:mb-7 sm:mt-7'>
                {
-                TestamonialList.map(({id,path,alt,message}) => (
+                TestamonialList.map(({id, name, path, alt, message}) => (
                             <>
                                 <div key={id} className={`${'col-12 md:col-8 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative sm:pl-8 '}`}>
                                     <Image src={path} alt={alt} className={`${styles.testamonialimage} ${'absolute'}`}></Image>
-                                    <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-full text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}><p>{message}</p></div>
+                                    <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-full text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}>
+                                        <p id='testimonialAuthorName' className='font-bold'>- {name}</p>
+                                        <p id='testimonialReviewMsg' className='justify-content-between text-lg -mt-1'>{message}</p>
+                                        <p id='testimonialRating' className='-mt-1'>{rating}</p>
+                                    </div>
                                 </div>
                             </>
                         )

@@ -4,20 +4,10 @@ import { useState, useEffect } from 'react';
 import { getLocalStorage, setLocalStorage } from '@/lib/storageHelper';
 import styles from './css/cookiebanner.module.css';
 
-
 export default function CookieBanner(){
     const [loading, setLoading] = useState(false);
     const [cookieConsent, setCookieConsent] = useState(false);
     const [visible, setVisible] = useState(false);
-
-    const load = () => {
-        setLoading(true);
-
-        setTimeout(() => {
-            setLoading(false);
-            setCookieConsent(true);
-        }, 2000);
-    };
 
     useEffect (() => {
         const storedCookieConsent = getLocalStorage("cookie_consent", null)
@@ -25,8 +15,7 @@ export default function CookieBanner(){
         setCookieConsent(storedCookieConsent)
     }, [setCookieConsent])
 
-    
-    useEffect(() => {
+        useEffect(() => {
         const newValue = cookieConsent ? 'granted' : 'denied'
 
         window.gtag("consent", 'update', {
