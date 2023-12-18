@@ -75,7 +75,7 @@ export default function Main(){
                                 <div key={id} className={`${'col-12 md:col-8 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative sm:pl-8 '}`}>
                                     <Image src={path} alt={alt} className={`${styles.testamonialimage} ${'absolute'}`}></Image>
                                     <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-full text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}>
-                                        <p id='testimonialAuthorName' className='font-bold'>- {name}</p>
+                                        <p id='testimonialAuthorName' className='font-semibold'>- {name}</p>
                                         <p id='testimonialReviewMsg' className='justify-content-between text-lg -mt-1'>{message}</p>
                                         <p id='testimonialRating' className='-mt-1'>{rating}</p>
                                     </div>
