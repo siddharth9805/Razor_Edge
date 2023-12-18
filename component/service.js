@@ -60,7 +60,7 @@ export default function Main(){
                 }
             </div>
             <Dialog id='serviceModal' header={services} visible={visible} className='w-11 sm:w-6' onHide={() => {setVisible(false)}}>
-                <p className="text-black-alpha-90">
+                <p className="text-white">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
