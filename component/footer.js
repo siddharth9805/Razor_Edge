@@ -54,10 +54,19 @@ export default function Footer(){
                 <Button id='footerSubmitBTN' label="Submit" className={`${'border-round-xl sm:border-round-2xl bg-black-alpha-90 text-white'} ${styles.button}`} onClick={Mailchimp}/>
             </div> 
             <div className="flex flex-row w-7 justify-content-around sm:w-3 mb-4">
-                <i id='footerSMIconFacebbok' className={`${"pi pi-facebook"} ${styles.icons}`}></i>
-                <i id='footerSMIconInstagram' className={`${"pi pi-instagram"} ${styles.icons}`}></i>
-                <i id='footerSMIconWhatsApp' className={`${"pi pi-whatsapp"} ${styles.icons}`}></i>
-                <i id='footerSMIconTwitter' className={`${"pi pi-twitter"} ${styles.icons}`}></i>
+				<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+					<i id='footerSMIconTwitter' className={`${"pi pi-twitter "} ${styles.icons}`}></i>
+				</a>
+				<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+					<i id='footerSMIconFacebbok' className={`${"pi pi-facebook"} ${styles.icons}`}></i>
+				</a>
+				<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+					<i id='footerSMIconInstagram' className={`${"pi pi-instagram"} ${styles.icons}`}></i>
+				</a>
+				<a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+    				<i id='footerSMIconWhatsApp' className={`${"pi pi-whatsapp"} ${styles.icons}`}></i>
+  				</a>
+				
             </div>         
             <p id='RECopywriteText' className='text-center m-0'>{watermarkTag}</p>
         </div>
