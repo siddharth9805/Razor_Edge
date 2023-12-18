@@ -54,7 +54,15 @@ export default function Home(){
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div className={`col-8 ${styles.offerBackground}`}>
+                                <div id='offerBackgroundImg' className={`text-center m-1 border-round-md h-full ${styles.offerText}`}>
+                                    <p id='offerSubscribeText' className='text-center text-yellow-200 text-2xl mt-5'>SUBSCRIBE TO OUR NEWSLETTER</p>
+
+
+                                    
+                                    <p id='likingOfferText' className={`text-center text-white text-lg mt-5 ${styles.offerText}`}>THE FIRST 100 CUSTOMERS WILL <br/>RECEIVE A COMPLIMENTARY BEARD TRIM!</p>            
+                                </div>                               
+                            </div>
                         </div>
                     </Dialog>
                 </div>

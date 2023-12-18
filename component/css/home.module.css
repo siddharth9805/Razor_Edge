@@ -28,6 +28,30 @@
     animation: glow 1s ease-in-out infinite alternate;
   }
 
+
+  .offerBackground {
+    position: relative;
+  }
+  
+  .offerBackground::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/OfferBackground.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+  }
+  
+  .offerText {
+    position: relative;
+    z-index: 1; 
+  }
+
+
   @keyframes glow {
     0% {
       box-shadow: 0 0 5px #CCAD7E, 0 0 10px #CCAD7E, 0 0 15px #CCAD7E, 0 0 20px #CCAD7E;
