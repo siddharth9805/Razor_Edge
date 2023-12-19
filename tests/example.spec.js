@@ -62,3 +62,16 @@ test('Check if the testimonials section loads properly on the Next.js website', 
   const testimonialsSection = await page.$eval('#testimonial', (div) => div.id);
   expect(testimonialsSection).toBeTruthy();
 });
+
+test('Check if the hero section has a paragraph with specific text on the Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#home', { visible: true });
+  const heroTitleTextContent = await page.$eval('#home p', (p) => p.textContent);
+
+  // Check if the content matches the expected value
+  expect(heroTitleTextContent).toBe('Where style meets Precision');
+});
+
