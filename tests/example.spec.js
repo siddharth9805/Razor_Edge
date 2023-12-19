@@ -306,6 +306,18 @@ test('Navbar Menu Items Count', async ({ page }) => {
   expect(contactUsCount).toBe(1);
 });
 
+test('Check presence of InputText element in the footer', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
 
+  // Wait for the div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#contact-us', { timeout: 5000 });
+
+  // Check the presence of InputText element with id "footerInputEmailAdd"
+  const inputText = await page.$('#footerInputEmailAdd');
+
+  // Check if the InputText element is present
+  expect(inputText).toBeTruthy();
+});
 
 
