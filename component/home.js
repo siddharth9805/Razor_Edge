@@ -99,7 +99,7 @@ export default function Home(){
                                 <div id='offerBackgroundImg' className={`text-center m-1 border-round-md h-6 ${styles.offerText}`} />
                                 <p id='offerSubscribeText' className='text-center text-yellow-200 text-2xl mt-5 z-1'>SUBSCRIBE TO OUR NEWSLETTER</p>
                                 <div className='m-2 flex flex-column align-items-center justify-content-around h-6rem'>
-                                    <InputText id='offerInputEmail' label="Email Address" value={email} placeholder='Enter your Email Address' onChange={getemailvalue} className='z-1 text-black-alpha-80 w-full' />
+                                    <InputText id='offerInputEmail' label="Email Address" value={email} placeholder='Enter your Email Address' onChange={getemailvalue} className={`${'z-1 text-black-alpha-80 w-full sm:w-20rem'}`} />
                                     <Button id='offerEmailSubmit' label='Submit' loading={loading} className='' onClick={handleButtonClick} />
                                 </div>
                                 <p id='likingOfferText' className={`text-center text-white font-medium text-lg mt-5 z-1 ${styles.offerText}`}>THE FIRST 100 CUSTOMERS WILL <br/>RECEIVE A COMPLIMENTARY BEARD TRIM!</p>                                        
