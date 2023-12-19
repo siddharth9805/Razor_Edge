@@ -197,5 +197,19 @@ test('Develop PW Test for Offers Subscription Space in Footer"', async ({ page }
   expect(footerHeadingText).toBe(expectedText);
 });
 
+test('Check presence of p tags inside About Page', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/about');
+
+  // Wait for the AboutPageContainer div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#leftSectionContainer', { visible: true });
+
+  // Check the presence of p tags inside the div
+  const pTags = await page.$$('#leftSectionContainer p');
+
+  // Check if at least one p tag is present
+  expect(pTags.length).toBeGreaterThan(0);
+});
+
 
 
