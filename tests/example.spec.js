@@ -50,3 +50,15 @@ test('Check if the products section loads properly on the Next.js website', asyn
   const productsSection = await page.$eval('#carouselBody', (div) => div.id);
   expect(productsSection).toBeTruthy();
 });
+
+test('Check if the testimonials section loads properly on the Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the testimonials section to be visible. Replace 'your-testimonials-section-selector' with the actual CSS selector for your testimonials section.
+  await page.waitForSelector('#testimonial', { visible: true });
+
+  // Check if the testimonials section is visible
+  const testimonialsSection = await page.$eval('#testimonial', (div) => div.id);
+  expect(testimonialsSection).toBeTruthy();
+});
