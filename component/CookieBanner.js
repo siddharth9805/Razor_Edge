@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { getLocalStorage, setLocalStorage } from '@/lib/storageHelper';
 import styles from './css/cookiebanner.module.css';
 
-export default function CookieBanner(){
+export default function CookieBanner({ data }){
     const [loading, setLoading] = useState(false);
     const [cookieConsent, setCookieConsent] = useState(false);
     const [visible, setVisible] = useState(false);

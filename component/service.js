@@ -3,7 +3,7 @@ import { Image } from 'primereact/image';
 import React from 'react';
 import { Dialog } from 'primereact/dialog';
 
-export default function Main(){
+export default function Main({ data }){
     const [visible,setVisible]= React.useState();
     const [services,setServices] = React.useState('');
     const [hoverStates, setHoverStates] = React.useState({});
