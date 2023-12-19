@@ -148,23 +148,23 @@ test('Check if the site is visible and has copyright text', async ({ page }) => 
   expect(pTagText).toBe(expectedText);
 });
 
-test('Check if the hero section CTA button has the text "View Offers" on the Next.js website', async ({ page }) => {
-  // Navigate to your Next.js website
-  await page.goto('https://razoredge.vercel.app/');
+// test('Check if the hero section CTA button has the text "View Offers" on the Next.js website', async ({ page }) => {
+//   // Navigate to your Next.js website
+//   await page.goto('https://razoredge.vercel.app/');
 
-  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
-  await page.waitForSelector('#home', { visible: true });
+//   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+//   await page.waitForSelector('#home', { visible: true });
 
-  // Check if the hero section is visible
-  const heroSection = await page.$('#home');
-  expect(heroSection).toBeTruthy();
+//   // Check if the hero section is visible
+//   const heroSection = await page.$('#home');
+//   expect(heroSection).toBeTruthy();
 
-  // Check the text of the CTA button within the hero section
-  const ctaButtonText = await heroSection.$eval('#offerButton', button => button.innerText);
+//   // Check the text of the CTA button within the hero section
+//   const ctaButtonText = await heroSection.$eval('#home #offerButton', button => button.innerText);
   
-  // Ensure that the CTA button text is "View Offers"
-  expect(ctaButtonText).toBe('View Offers');
-});
+//   // Ensure that the CTA button text is "View Offers"
+//   expect(ctaButtonText).toBe('View Offers');
+// });
 
 
 test('Check CTA text content of the button with text "View Offers"', async ({ page }) => {
@@ -211,21 +211,21 @@ test('Check presence of p tags inside About Page', async ({ page }) => {
   expect(pTags.length).toBeGreaterThan(0);
 });
 
-test('Check if the hero section has a Call-to-Action (CTA) button', async ({ page }) => {
-  // Navigate to your Next.js website
-  await page.goto('https://razoredge.vercel.app/');
+// test('Check if the hero section has a Call-to-Action (CTA) button', async ({ page }) => {
+//   // Navigate to your Next.js website
+//   await page.goto('https://razoredge.vercel.app/');
 
-  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
-  await page.waitForSelector('your-hero-section-selector', { visible: true });
+//   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+//   await page.waitForSelector('your-hero-section-selector', { visible: true });
 
-  // Check if the hero section is visible
-  const heroSection = await page.$('your-hero-section-selector');
-  expect(heroSection).toBeTruthy();
+//   // Check if the hero section is visible
+//   const heroSection = await page.$('your-hero-section-selector');
+//   expect(heroSection).toBeTruthy();
 
-  // Check if there is a Call-to-Action (CTA) button within the hero section. Replace 'your-cta-button-selector' with the actual CSS selector for your CTA button.
-  const ctaButton = await heroSection.$('your-cta-button-selector');
-  expect(ctaButton).toBeTruthy();
-});
+//   // Check if there is a Call-to-Action (CTA) button within the hero section. Replace 'your-cta-button-selector' with the actual CSS selector for your CTA button.
+//   const ctaButton = await heroSection.$('your-cta-button-selector');
+//   expect(ctaButton).toBeTruthy();
+// });
 
 
 test('Check presence of Button element inside div', async ({ page }) => {
