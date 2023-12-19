@@ -182,5 +182,20 @@ test('Check CTA text content of the button with text "View Offers"', async ({ pa
   expect(buttonText).toBe(expectedText);
 });
 
+test('Develop PW Test for Offers Subscription Space in Footer"', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#contact-us', { timeout: 5000 });
+
+  // Get the text content of the p tag with id "footerHeading"
+  const footerHeadingText = await page.$eval('#contact-us #footerHeading', (p) => p.textContent.trim());
+
+  // Check if the text content matches the expected value
+  const expectedText = 'subscribe now for irresistible offers!'; // Replace with the expected text
+  expect(footerHeadingText).toBe(expectedText);
+});
+
 
 
