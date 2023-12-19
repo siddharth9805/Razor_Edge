@@ -51,6 +51,10 @@
     z-index: 1; 
   }
 
+  .centerplaceholder ::placeholder {
+    text-align: center !important;
+}
+
 
   @keyframes glow {
     0% {
