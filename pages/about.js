@@ -4,24 +4,20 @@ import { Image } from 'primereact/image';
 import Nav from '@/component/nav';
 import Footer from '@/component/footer';
 import styles from '@/styles/about.module.css';
-// import getDataInObject from "../lib/markdownReader";
+import { getDataInObject } from '../lib/markdownReader';
 
+export async function getStaticProps() {
+  const markdownData = getDataInObject("./dynamic-content");
+  console.log(markdownData); // Debug
 
-// export async function getStaticProps({ params }) {
-//     const siteContent = getDataInObject("./dynamic-content/aboutSiteContent");
-//     const footerContent = getDataInObject("./dynamic-content/footerSectionContent");
-  
-//     return {
-//       props: {
-//         siteContent,
-//         footerContent
-//       },
-//     };
-//   }
-  
+  return {
+    props: {
+      data: markdownData,
+    },
+  };
+}
 
-
-export default function About() {
+export default function About({ data }) {
     const homeRef = useRef(null);
     const servicesRef = useRef(null);
     const contactUsRef = useRef(null);
@@ -53,23 +49,23 @@ export default function About() {
 
                 <div id='AboutPageContainer' className="flex justify-content-center align-items-center mt-8">
                     <div id='leftSectionContainer' className="flex flex-column p-4 w-full">
-                        <h1 id='aboutSiteName'>Razor Edge</h1>
-                        <p id='aboutContent' className='text-lg'>Where your hair journey meets our masterful artistry !!</p>
+                        <h1 id='aboutSiteName'>{data?.aboutSiteContent?.siteNameText}</h1>
+                        <p id='aboutContent' className='text-lg'>{data?.aboutSiteContent?.siteInfoText}</p>
                         <p id='aboutContent' className='text-lg'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
                         <div id='storyImage' className={`flex justify-content-aroung align-items-center`}>
                             <div className='flex flex-column justify-content-center align-items-center'>
                                 <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className='p-3'/>
                             </div>
                             <div className='flex flex-column justify-content-start p-3'>
-                                <p id='storyTitle' className={`text-yellow-200 text-2xl`}>Our Story</p>
-                                <p id='storySubTitle' className='text-lg'>Nurturing Beauty, Empowering Confidence</p>
+                                <p id='storyTitle' className={`text-yellow-200 text-2xl`}>{data?.aboutSiteContent?.ourStoryHeading}</p>
+                                <p id='storySubTitle' className='text-lg'>{data?.aboutSiteContent?.ourStorySubHeading}</p>
                                 <p id='storyContext' className={`font-light text-lg`}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
                             </div>
                         </div>
                         <div id='visionSectionContainer' className="flex justify-content-aroung align-items-center">
                             <div id='visionContentContainer' className='flex flex-column justify-content-end'>
-                                <p id='visionTitle' className={`text-yellow-200 text-2xl`}>Our Vision</p>
-                                <p id='visionSubTitle' className='text-lg'>Elevating Beauty Beyond Asthetics</p>
+                                <p id='visionTitle' className={`text-yellow-200 text-2xl`}>{data?.aboutSiteContent?.ourVisionHeading}</p>
+                                <p id='visionSubTitle' className='text-lg'>{data?.aboutSiteContent?.ourVisionSubHeading}</p>
                                 <p id='visionContext' className={`font-light text-lg`}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
                             </div>
                             <div className='flex flex-column justify-content-center align-items-center'>

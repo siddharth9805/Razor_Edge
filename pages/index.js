@@ -6,8 +6,20 @@ import Main from '@/component/service';
 import MyCarousel from '@/component/carousel';
 import React, { useRef } from 'react';
 import { useRouter } from 'next/router';
+import { getDataInObject } from '../lib/markdownReader';
 
-export default function Salon() {
+export async function getStaticProps() {
+  const markdownData = getDataInObject("./dynamic-content");
+  console.log(markdownData); // Debug
+
+  return {
+    props: {
+      data: markdownData,
+    },
+  };
+}
+
+export default function Salon({ data }) {
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
   const contactUsRef = useRef(null);

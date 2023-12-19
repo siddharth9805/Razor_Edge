@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 
-export default function Footer(){
+export default function Footer({ data }){
     const [email, setEmail] = React.useState('');
     const subscribeTag= 'subscribe now for irresistible offers!';
     const watermarkTag= '© 2023 RAZOR EDGE Inc';

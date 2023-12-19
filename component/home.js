@@ -5,7 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { Toast } from 'primereact/toast';
 import React, { useRef, useState } from 'react';
 
-export default function Home(){
+export default function Home({ data }){
     const header= 'Where style meets Precision'
     const subheader = `Get Yourself Groomed for The New Year's Eve.... And Ring In 2024 With Unmatched Elegance !!`;
     
@@ -83,7 +83,7 @@ export default function Home(){
                         style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
                         <div id='bannerContainer' className="flex justify-content-around align-items-center w-full flex-wrap">
                             <div id='exclusiveOfferContent' className="flex align-items-center flex-column justify-content-center">
-                                <div className="text-center text-black-alpha-80 p-2 mt-2 w-10rem border-round-3xl bg-yellow-200 w-6 font-bold">Exclusive Offer</div>
+                                <div className="text-center text-black-alpha-80 p-2 mt-2 w-10rem border-round-3xl bg-yellow-200 w-6 font-bold">{}</div>
                                 <p>💥 Valid Until January 1st! 💥</p>
                                 <p className="text-center text-yellow-200 p-2 m-0 text-3xl">SAVE UP TO</p>
                                 <div className='flex align-items-center justify-content-center'>
