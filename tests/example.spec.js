@@ -286,5 +286,26 @@ test('Check presence of video element', async ({ page }) => {
   expect(videoElement).toBeTruthy();
 });
 
+test('Navbar Menu Items Count', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the Menubar to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#navbar', { timeout: 5000 });
+
+  // Count the occurrences of li elements with specific ids
+  const homeCount = await page.$$eval('#navbar li[id="home"]', (elements) => elements.length);
+  const aboutCount = await page.$$eval('#navbar li[id="about"]', (elements) => elements.length);
+  const servicesCount = await page.$$eval('#navbar li[id="services"]', (elements) => elements.length);
+  const contactUsCount = await page.$$eval('#navbar li[id="contactus"]', (elements) => elements.length);
+
+  // Check if the counts match the expected values
+  expect(homeCount).toBe(1);
+  expect(aboutCount).toBe(1);
+  expect(servicesCount).toBe(1);
+  expect(contactUsCount).toBe(1);
+});
+
+
 
 
