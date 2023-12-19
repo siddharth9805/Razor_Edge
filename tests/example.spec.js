@@ -111,3 +111,27 @@ test('Check presence of social media links in the footer', async ({ page }) => {
 });
 
 
+test('Check presence of images in carouselContainer', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the carouselContainer div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#carouselContainer', { timeout: 5000 });
+
+  // Check the presence of images
+  const imageIds = [
+    'sephora-img', 'athr-img', 'augustis-img', 'aN-img', 'albrey-img',
+    'aveda-img', 'sephora-img-dup', 'athr-img-dup', 'augustis-img-dup', 'aN-img-dup', 'albrey-img-dup'
+  ];
+
+  for (const imageId of imageIds) {
+    const imageSelector = `#${imageId}`;
+    const image = await page.$(imageSelector);
+
+    // Check if the image with the given ID is present
+    expect(image).toBeTruthy();
+  }
+});
+
+
+
