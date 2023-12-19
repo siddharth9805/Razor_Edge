@@ -37,25 +37,24 @@ export default function About() {
 
                 <div id='AboutPageContainer' className="flex justify-content-center align-items-center mt-8">
                     <div id='leftSectionContainer' className="flex flex-column p-4 w-full">
-                        <p id='aboutTitle'>Hello ! Welcome to</p>
                         <h1 id='aboutSiteName'>Razor Edge</h1>
-                        <p id='aboutContent'>Where your hair journey meets our masterful artistry !!</p>
-                        <p id='aboutContent'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
+                        <p id='aboutContent' className='text-lg'>Where your hair journey meets our masterful artistry !!</p>
+                        <p id='aboutContent' className='text-lg'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
                         <div id='storyImage' className={`flex justify-content-aroung align-items-center`}>
                             <div className='flex flex-column justify-content-center align-items-center'>
                                 <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className='p-3'/>
                             </div>
                             <div className='flex flex-column justify-content-start p-3'>
                                 <p id='storyTitle' className={`text-yellow-200 text-2xl`}>Our Story</p>
-                                <p id='storySubTitle'>Nurturing Beauty, Empowering Confidence</p>
-                                <p id='storyContext' className={`font-light`}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
+                                <p id='storySubTitle' className='text-lg'>Nurturing Beauty, Empowering Confidence</p>
+                                <p id='storyContext' className={`font-light text-lg`}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
                             </div>
                         </div>
                         <div id='visionSectionContainer' className="flex justify-content-aroung align-items-center">
                             <div id='visionContentContainer' className='flex flex-column justify-content-end'>
                                 <p id='visionTitle' className={`text-yellow-200 text-2xl`}>Our Vision</p>
-                                <p id='visionSubTitle'>Elevating Beauty Beyond Asthetics</p>
-                                <p id='visionContext' className={`font-light`}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
+                                <p id='visionSubTitle' className='text-lg'>Elevating Beauty Beyond Asthetics</p>
+                                <p id='visionContext' className={`font-light text-lg`}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
                             </div>
                             <div className='flex flex-column justify-content-center align-items-center'>
                                 <Image id='visionRelatedImage' src='/vision-img.png' alt='vision-img' className=''/>
