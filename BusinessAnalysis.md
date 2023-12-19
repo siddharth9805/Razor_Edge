@@ -4,6 +4,18 @@
 ## Project Context
 This analysis is a part of final project for the "Web Systems Design" course in the Masters in Computer Science Program at NJIT. We are creating a salon website that will be later hosted on Vercel. This markdown file contains an analysis of the following websites, serving as a benchmark for our website development.
 
+
+### SWOT Analysis Table
+
+| Website / Criteria      | TheCut                           | Tribe Hair Company (Hairy)       | Hair & Co BKLYN                  |
+|-------------------------|----------------------------------|----------------------------------|----------------------------------|
+| **Strengths**           | - 65 million appointments.<br> - 6 million app users.<br> - High user engagement. | - Renowned for luxury services.<br> - Specialization in color and extensions. | - Strong local presence in Brooklyn.<br> - Diverse range of haircare products. |
+| **Weaknesses**          | - Limited to barber booking.<br> - Lacks diverse salon functionalities. | - High-end perception limits market appeal. | - Limited online engagement.<br> - Focus more on product sales than services. |
+| **Opportunities**       | - Expansion to various salon services.<br> - Advanced features like AI style recommendations. | - Diversifying services.<br> - Adapting to new hair trends. | - Enhancing online booking features.<br> - Expanding product range. |
+| **Threats**             | - Competition from salon apps.<br> - Market saturation in barber booking. | - Competition from luxury salons.<br> - Shifting beauty trends. | - Competition from salons and online retailers.<br> - Shift to online service platforms. |
+
+
+
 ## TheCut [https://www.thecut.co/]
 ## 1. Competitive Analysis
 
