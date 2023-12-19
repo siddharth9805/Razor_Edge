@@ -75,3 +75,39 @@ test('Check if the hero section has a paragraph with specific text on the Next.j
   expect(heroTitleTextContent).toBe('Where style meets Precision');
 });
 
+test('Check presence of social media links in the footer', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#contact-us', { timeout: 5000 });
+
+  // Check the presence of social media links
+  const twitterLink = await page.$eval('#contact-us #footerSMIconTwitter', (twitterIcon) => {
+    const link = twitterIcon.parentElement.href;
+    return link && link.includes('twitter.com');
+  });
+
+  const facebookLink = await page.$eval('#contact-us #footerSMIconFacebbok', (facebookIcon) => {
+    const link = facebookIcon.parentElement.href;
+    return link && link.includes('facebook.com');
+  });
+
+  const instagramLink = await page.$eval('#contact-us #footerSMIconInstagram', (instagramIcon) => {
+    const link = instagramIcon.parentElement.href;
+    return link && link.includes('instagram.com');
+  });
+
+  const whatsappLink = await page.$eval('#contact-us #footerSMIconWhatsApp', (whatsappIcon) => {
+    const link = whatsappIcon.parentElement.href;
+    return link && link.includes('wa.me/1234567890');
+  });
+
+  // Check if all social media links are present
+  expect(twitterLink).toBeTruthy();
+  expect(facebookLink).toBeTruthy();
+  expect(instagramLink).toBeTruthy();
+  expect(whatsappLink).toBeTruthy();
+});
+
+
