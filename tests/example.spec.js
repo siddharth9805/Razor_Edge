@@ -148,5 +148,39 @@ test('Check if the site is visible and has copyright text', async ({ page }) => 
   expect(pTagText).toBe(expectedText);
 });
 
+test('Check if the hero section CTA button has the text "View Offers" on the Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#home', { visible: true });
+
+  // Check if the hero section is visible
+  const heroSection = await page.$('#home');
+  expect(heroSection).toBeTruthy();
+
+  // Check the text of the CTA button within the hero section
+  const ctaButtonText = await heroSection.$eval('#offerButton', button => button.innerText);
+  
+  // Ensure that the CTA button text is "View Offers"
+  expect(ctaButtonText).toBe('View Offers');
+});
+
+
+test('Check CTA text content of the button with text "View Offers"', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the home div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#home', { timeout: 5000 });
+
+  // Get the text content of the button with id "offerButton"
+  const buttonText = await page.$eval('#home #offerButton', (button) => button.textContent.trim());
+
+  // Check if the text content matches the expected value
+  const expectedText = 'View Offers';
+  expect(buttonText).toBe(expectedText);
+});
+
 
 

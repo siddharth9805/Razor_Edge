@@ -77,7 +77,7 @@ export default function Home(){
                     <p id='heroTitleText' className={`${'text-center text-4xl xl:text-7xl sm:font-bold capitalize mt-0 mb-0'} ${styles.Herotext}`}>{header}</p>
                     <p id='heroSubTitleText' className={`${'text-center sm:text-base sm:font-bold mb-7'} ${styles.Herotext}`}>{subheader}</p>
 
-                    <Button className={`${styles.offerButton} ${'w-6 sm:w-2 h-3rem'}`} label="Get Offers" onClick={() => setVisible(true)} />
+                    <Button id='offerButton' className={`${styles.offerButton} ${'w-6 sm:w-2 h-3rem'}`} label="View Offers" onClick={() => setVisible(true)} />
                     
                     <Dialog visible={visible} onHide={() => setVisible(false) } className='p-0 w-full sm:w-6'
                         style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
