@@ -26,3 +26,15 @@ test('Check if the hero section loads properly on the Next.js website', async ({
   const heroSection = await page.$eval('#home', (div) => div.id);
   expect(heroSection).toBeTruthy();
 });
+
+test('Check if the services section loads properly on the Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/');
+  
+  // Wait for the services section to be visible. Replace 'your-services-section-selector' with the actual CSS selector for your services section.
+  await page.waitForSelector('#service', { visible: true });
+
+  // Check if the services section is visible
+  const servicesSection = await page.$eval('#service', (div) => div.id);;
+  expect(servicesSection).toBeTruthy();
+});
