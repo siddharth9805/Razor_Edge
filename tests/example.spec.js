@@ -257,4 +257,22 @@ test('Check count of testimonialAuthorName p tags', async ({ page }) => {
   expect(count).toBe(expectedCount);
 });
 
+test('Check if dialog opens when offerButton is pressed', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the offerButton to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#offerButton', { timeout: 5000 });
+
+  // Click the offerButton to trigger the dialog
+  await page.click('#offerButton');
+
+  // Wait for the dialog with id "bannerContainer" to be visible
+  await page.waitForSelector('#bannerContainer', { visible: true, timeout: 5000 });
+
+  // Check if the dialog is visible
+  const isDialogVisible = await page.isVisible('#bannerContainer');
+  expect(isDialogVisible).toBeTruthy();
+});
+
 
