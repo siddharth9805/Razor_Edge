@@ -8,8 +8,8 @@ import getDataInObject from "@/lib/markdownReader";
 
 
 export async function getStaticProps({ params }) {
-    const siteContent = getDataInObject("../dynamic-content/aboutSiteContent");
-    const footerContent = getDataInObject("../dynamic-content/footerSectionContent");
+    const siteContent = getDataInObject("@/dynamic-content/aboutSiteContent");
+    const footerContent = getDataInObject("@/dynamic-content/footerSectionContent");
   
     return {
       props: {
