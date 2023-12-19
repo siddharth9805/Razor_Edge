@@ -16,6 +16,25 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 
 
 
+### Competitive Analysis Table
+
+| Feature / Website         | Your Salon Website                                  | TheCut                         | Tribe Hair Company             | Hair & Co BKLYN                |
+|---------------------------|-----------------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| **User Interface**        | Modern and intuitive                                | Simple and efficient           | Luxurious and elegant          | Local and accessible           |
+| **Service Range**         | Comprehensive salon services including hair, nails, etc. | Primarily barber services     | Specialized in luxury color and extensions | Wide range of haircare products |
+| **Booking System**        | Advanced booking with personalized options          | Efficient schedule management  | Standard booking system        | Limited online booking features |
+| **Payment Options**       | Multiple payment methods including digital wallets  | Digital payments               | Traditional methods            | Primarily online transactions  |
+| **Customer Reviews**      | Integrated review system                            | Client review feature          | Limited visibility of reviews  | Not prominently featured       |
+| **Brand Image**           | Versatile and inclusive                             | Strong in barber segment       | High-end luxury focus          | Strong local presence in Brooklyn |
+| **Digital Marketing**     | Robust online presence across multiple platforms    | Effective use of online channels | Primarily reputation-based   | Localized marketing strategy   |
+| **Client Engagement**     | High engagement with interactive features           | High user engagement           | Exclusive client base          | Focuses on product sales       |
+| **Innovative Features**   | AI-based style recommendations, virtual try-on      | Schedule management tools      | None specific                  | Wide range of haircare products online |
+| **Market Segment**        | Wide demographic appeal                             | Barbers and barber clients     | High-end clientele             | Brooklyn residents and online shoppers |
+
+
+
+
+
 ## TheCut [https://www.thecut.co/]
 ## 1. Competitive Analysis
 
