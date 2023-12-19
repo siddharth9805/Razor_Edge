@@ -306,6 +306,60 @@ test('Navbar Menu Items Count', async ({ page }) => {
   expect(contactUsCount).toBe(1);
 });
 
+test('Check presence of InputText element in the footer', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
 
+  // Wait for the div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#contact-us', { timeout: 5000 });
+
+  // Check the presence of InputText element with id "footerInputEmailAdd"
+  const inputText = await page.$('#footerInputEmailAdd');
+
+  // Check if the InputText element is present
+  expect(inputText).toBeTruthy();
+});
+
+test('check "Our Story" in about us page', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/about');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#storyImage', { visible: true });
+  const heroTitleTextContent = await page.$eval('#storyImage p', (p) => p.textContent);
+
+  // Check if the content matches the expected value
+  expect(heroTitleTextContent).toBe('Our Story');
+});
+
+test('check "Our Vision" in about us page', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/about');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#visionSectionContainer', { visible: true });
+  const heroTitleTextContent = await page.$eval('#visionSectionContainer p', (p) => p.textContent);
+
+  // Check if the content matches the expected value
+  expect(heroTitleTextContent).toBe('Our Vision');
+});
+
+test('Check presence and visibility of Cookie Banner', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the Cookie Banner div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#mainDivCookieBanner', { timeout: 5000 });
+
+  // Check the presence of the Cookie Banner div
+  const cookieBannerDiv = await page.$('#mainDivCookieBanner');
+
+  // Check if the Cookie Banner div is present
+  expect(cookieBannerDiv).toBeTruthy();
+
+  // Check if the Cookie Banner div is visible
+  const isCookieBannerVisible = await page.isVisible('#mainDivCookieBanner');
+  expect(isCookieBannerVisible).toBeTruthy();
+});
 
 
