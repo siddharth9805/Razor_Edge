@@ -7,9 +7,11 @@ anotherSiteInfoText: ''
 
 ourStoryHeading: 'Our Story'
 ourStorySubHeading: 'Nurturing Beauty, Empowering Confidence'
-ourContent: ''
+ourStoryContent: ''
+ourStoryPhoto: '/story-img.png'
 
-ourStoryHeading: 'Our Vision'
-ourStorySubHeading: 'Elevating Beauty Beyond Asthetics'
-ourVisContent: ''
+ourVisionHeading: 'Our Vision'
+ourVisionSubHeading: 'Elevating Beauty Beyond Asthetics'
+ourVisionContent: ''
+ourVisionPhoto: '/vision-img.png'
 --- 
