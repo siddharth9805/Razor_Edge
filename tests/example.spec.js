@@ -275,4 +275,16 @@ test('Check if dialog opens when offerButton is pressed', async ({ page }) => {
   expect(isDialogVisible).toBeTruthy();
 });
 
+test('Check presence of video element', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the video element to be present (adjust the selector and wait time as needed)
+  const videoElement = await page.waitForSelector('#backgroundVideo', { timeout: 5000 });
+
+  // Check if the video element is present
+  expect(videoElement).toBeTruthy();
+});
+
+
 
