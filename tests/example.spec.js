@@ -38,3 +38,15 @@ test('Check if the services section loads properly on the Next.js website', asyn
   const servicesSection = await page.$eval('#service', (div) => div.id);;
   expect(servicesSection).toBeTruthy();
 });
+
+test('Check if the products section loads properly on the Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the products section to be visible. Replace 'your-products-section-selector' with the actual CSS selector for your products section.
+  await page.waitForSelector('#carouselBody', { visible: true });
+
+  // Check if the products section is visible
+  const productsSection = await page.$eval('#carouselBody', (div) => div.id);
+  expect(productsSection).toBeTruthy();
+});
