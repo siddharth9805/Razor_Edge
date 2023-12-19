@@ -133,5 +133,20 @@ test('Check presence of images in carouselContainer', async ({ page }) => {
   }
 });
 
+test('Check if the site is visible and has copyright text', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#contact-us', { timeout: 5000 });
+
+  // Get the text content of the p tag inside the contact-us div
+  const pTagText = await page.$eval('#contact-us #RECopywriteText', (p) => p.textContent.trim());
+
+  // Check if the text content matches the expected value
+  const expectedText = '© 2023 RAZOR EDGE Inc'; // Replace with the expected text
+  expect(pTagText).toBe(expectedText);
+});
+
 
 
