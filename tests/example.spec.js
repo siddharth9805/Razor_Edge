@@ -332,4 +332,16 @@ test('check "Our Story" in about us page', async ({ page }) => {
   expect(heroTitleTextContent).toBe('Our Story');
 });
 
+test('check "Our Vision" in about us page', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/about');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#visionSectionContainer', { visible: true });
+  const heroTitleTextContent = await page.$eval('#visionSectionContainer p', (p) => p.textContent);
+
+  // Check if the content matches the expected value
+  expect(heroTitleTextContent).toBe('Our Vision');
+});
+
 
