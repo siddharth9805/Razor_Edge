@@ -77,12 +77,13 @@ export default function Home(){
                     <p id='heroTitleText' className={`${'text-center text-4xl xl:text-7xl sm:font-bold capitalize mt-0 mb-0'} ${styles.Herotext}`}>{header}</p>
                     <p id='heroSubTitleText' className={`${'text-center sm:text-base sm:font-bold mb-7'} ${styles.Herotext}`}>{subheader}</p>
 
-                    <Button className={`${styles.offerButton}`} label="Get Offers" onClick={() => setVisible(true)} />
-                    <Dialog visible={visible} onHide={() => setVisible(false) } className='p-0'
+                    <Button className={`${styles.offerButton} ${'w-6 sm:w-2 h-3rem'}`} label="Get Offers" onClick={() => setVisible(true)} />
+                    
+                    <Dialog visible={visible} onHide={() => setVisible(false) } className='p-0 w-full sm:w-6'
                         style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
-                        <div id='bannerContainer' className="flex justify-content-around align-items-center w-full">
+                        <div id='bannerContainer' className="flex justify-content-around align-items-center w-full flex-wrap">
                             <div id='exclusiveOfferContent' className="flex align-items-center flex-column justify-content-center">
-                                <div className="text-center text-black-alpha-80 p-2 mt-2 border-round-3xl bg-yellow-200 w-full font-bold">Exclusive Offer</div>
+                                <div className="text-center text-black-alpha-80 p-2 mt-2 border-round-3xl bg-yellow-200 w-6 font-bold">Exclusive Offer</div>
                                 <p>💥 Valid Until January 1st! 💥</p>
                                 <p className="text-center text-yellow-200 p-2 m-0 text-3xl">SAVE UP TO</p>
                                 <div className='flex align-items-center justify-content-center'>
@@ -94,11 +95,11 @@ export default function Home(){
                                 </div>
                                 <p className="text-center font-semibold">ON YOUR FIRST VISIT</p>
                             </div>
-                            <div className={`${styles.offerBackground} flex flex-column align-items-center justify-content-center h-auto`}>
+                            <div className={`${styles.offerBackground} flex flex-column align-items-center justify-content-center flex-auto h-auto`}>
                                 <div id='offerBackgroundImg' className={`text-center m-1 border-round-md h-6 ${styles.offerText}`} />
                                 <p id='offerSubscribeText' className='text-center text-yellow-200 text-2xl mt-5 z-1'>SUBSCRIBE TO OUR NEWSLETTER</p>
                                 <div className='m-2 flex flex-column align-items-center justify-content-around h-6rem'>
-                                    <InputText id='offerInputEmail' label="Email Address" value={email} placeholder='Enter your Email Address' onChange={getemailvalue} className='z-1 text-black-alpha-80' />
+                                    <InputText id='offerInputEmail' label="Email Address" value={email} placeholder='Enter your Email Address' onChange={getemailvalue} className='z-1 text-black-alpha-80 w-full' />
                                     <Button id='offerEmailSubmit' label='Submit' loading={loading} className='' onClick={handleButtonClick} />
                                 </div>
                                 <p id='likingOfferText' className={`text-center text-white font-medium text-lg mt-5 z-1 ${styles.offerText}`}>THE FIRST 100 CUSTOMERS WILL <br/>RECEIVE A COMPLIMENTARY BEARD TRIM!</p>                                        

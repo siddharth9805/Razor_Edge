@@ -49,8 +49,8 @@ export default function Main(){
                     ServiceList.map(({id,path,alt,service_name}) => (
                             <>
                                 <div key={id} className='col-12 md:col-6 lg:col-3 flex flex-column justify-content-center align-items-center relative'>
-                                    <Image src={path} alt={alt} className={`${'block m-auto pl-4 sm:pl-0'} ${'w-max'} ${styles.imagecontainer}`} onMouseEnter={() => setHoverStates(prev => ({ ...prev, [id]: true }))} onMouseLeave={() => setHoverStates(prev => ({ ...prev, [id]: false }))} onClick={()=>{setVisible(true); setServices(service_name)}}/>
-                                    {hoverStates[id] && (<div className={`${styles.tagtest} ${'flex flex-column align-items-center justify-content-center m-auto absolute'}`}>
+                                    <Image src={path} alt={alt} className={`${'block sm:m-auto pl-4 sm:pl-0'} ${'w-max'} ${styles.imagecontainer}`} onMouseEnter={() => setHoverStates(prev => ({ ...prev, [id]: true }))} onMouseLeave={() => setHoverStates(prev => ({ ...prev, [id]: false }))} onClick={()=>{setVisible(true); setServices(service_name)}}/>
+                                    {hoverStates[id] && (<div className={`${styles.tagtest} ${'flex flex-column align-items-center justify-content-center ml-4 sm:m-auto absolute'}`}>
                                         <h2 className={styles.text}>{service_name}</h2>
                                     </div>)}
                                 </div>
@@ -75,9 +75,9 @@ export default function Main(){
                                 <div key={id} className={`${'col-12 md:col-8 lg:col-4 flex flex-column justify-content-center align-items-center ml-2 sm:m-0 relative sm:pl-8 '}`}>
                                     <Image src={path} alt={alt} className={`${styles.testamonialimage} ${'absolute'}`}></Image>
                                     <div className={`${'flex flex-column text-xl sm:text-2xl border-round-xl justify-content-center align-items-center bg-white text-center h-full text-black-alpha-90 w-9 mb-5 p-3'} ${styles.testamonialarea}`}>
-                                        <p id='testimonialAuthorName' className='font-semibold'>- {name}</p>
-                                        <p id='testimonialReviewMsg' className='justify-content-between text-lg -mt-1'>{message}</p>
-                                        <p id='testimonialRating' className='-mt-1'>{rating}</p>
+                                        <p id='testimonialAuthorName' className='font-semibold text-base mt-4'>- {name}</p>
+                                        <p id='testimonialReviewMsg' className='justify-content-between text-lg mt-'>{message}</p>
+                                        <p id='testimonialRating' className='mt-1'>{rating}</p>
                                     </div>
                                 </div>
                             </>

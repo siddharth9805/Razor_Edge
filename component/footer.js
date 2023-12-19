@@ -48,7 +48,7 @@ export default function Footer(){
     return(
         <div id='contact-us' className={`${'flex flex-column align-items-center justify-content-center p-4'} ${styles.bgColor}`}>
             <Toast ref={toast} />
-            <p id='footerHeading' className={`${'text-center text-xl sm:text-3xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>{subscribeTag}</p>
+            <p id='footerHeading' className={`${'text-center text-base sm:text-2xl text-black-alpha-90 uppercase mt-4 mb-4'}`}>{subscribeTag}</p>
             <div className='flex flex-row w-full justify-content-center mb-4'>
                 <InputText id='footerInputEmailAdd' value={email}  placeholder="Email" onChange={getemailvalue} className={`${'w-7 sm:w-2 border-round-2xl text-white'} ${styles.inputarea}`}/>
                 <Button id='footerSubmitBTN' label="Submit" className={`${'border-round-xl sm:border-round-2xl bg-black-alpha-90 text-white'} ${styles.button}`} onClick={Mailchimp}/>
