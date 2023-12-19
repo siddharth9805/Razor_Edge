@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-const websiteURL = 'http://localhost:3000/'
+const websiteURL = 'https://razoredge.vercel.app/'
 const websiteTitle = 'Razor Edge'
 
 test('Check the title of Next.js website', async ({ page }) => {
@@ -17,7 +17,7 @@ test('Check the title of Next.js website', async ({ page }) => {
 
 test('Check if the hero section loads properly on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('#home');
@@ -29,7 +29,7 @@ test('Check if the hero section loads properly on the Next.js website', async ({
 
 test('Check if the services section loads properly on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
   
   // Wait for the services section to be visible. Replace 'your-services-section-selector' with the actual CSS selector for your services section.
   await page.waitForSelector('#service', { visible: true });
@@ -41,7 +41,7 @@ test('Check if the services section loads properly on the Next.js website', asyn
 
 test('Check if the products section loads properly on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the products section to be visible. Replace 'your-products-section-selector' with the actual CSS selector for your products section.
   await page.waitForSelector('#carouselBody', { visible: true });
@@ -53,7 +53,7 @@ test('Check if the products section loads properly on the Next.js website', asyn
 
 test('Check if the testimonials section loads properly on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the testimonials section to be visible. Replace 'your-testimonials-section-selector' with the actual CSS selector for your testimonials section.
   await page.waitForSelector('#testimonial', { visible: true });
@@ -65,7 +65,7 @@ test('Check if the testimonials section loads properly on the Next.js website', 
 
 test('Check if the hero section has a paragraph with specific text on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('#home', { visible: true });
@@ -77,7 +77,7 @@ test('Check if the hero section has a paragraph with specific text on the Next.j
 
 test('Check presence of social media links in the footer', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#contact-us', { timeout: 5000 });
@@ -113,7 +113,7 @@ test('Check presence of social media links in the footer', async ({ page }) => {
 
 test('Check presence of images in carouselContainer', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the carouselContainer div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#carouselContainer', { timeout: 5000 });
@@ -135,7 +135,7 @@ test('Check presence of images in carouselContainer', async ({ page }) => {
 
 test('Check if the site is visible and has copyright text', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#contact-us', { timeout: 5000 });
@@ -150,7 +150,7 @@ test('Check if the site is visible and has copyright text', async ({ page }) => 
 
 test('Check if the hero section CTA button has the text "View Offers" on the Next.js website', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('#home', { visible: true });
@@ -169,7 +169,7 @@ test('Check if the hero section CTA button has the text "View Offers" on the Nex
 
 test('Check CTA text content of the button with text "View Offers"', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the home div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#home', { timeout: 5000 });
@@ -184,7 +184,7 @@ test('Check CTA text content of the button with text "View Offers"', async ({ pa
 
 test('Develop PW Test for Offers Subscription Space in Footer"', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the contact-us div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#contact-us', { timeout: 5000 });
@@ -199,7 +199,7 @@ test('Develop PW Test for Offers Subscription Space in Footer"', async ({ page }
 
 test('Check presence of p tags inside About Page', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/about');
+  await page.goto('https://razoredge.vercel.app/about');
 
   // Wait for the AboutPageContainer div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#leftSectionContainer', { visible: true });
@@ -213,7 +213,7 @@ test('Check presence of p tags inside About Page', async ({ page }) => {
 
 test('Check if the hero section has a Call-to-Action (CTA) button', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('your-hero-section-selector', { visible: true });
@@ -230,7 +230,7 @@ test('Check if the hero section has a Call-to-Action (CTA) button', async ({ pag
 
 test('Check presence of Button element inside div', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('.flex-column', { timeout: 5000 });
@@ -244,7 +244,7 @@ test('Check presence of Button element inside div', async ({ page }) => {
 
 test('Check count of testimonialAuthorName p tags', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the testimonial div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#testimonial', { timeout: 5000 });
@@ -259,7 +259,7 @@ test('Check count of testimonialAuthorName p tags', async ({ page }) => {
 
 test('Check if dialog opens when offerButton is pressed', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the offerButton to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#offerButton', { timeout: 5000 });
@@ -277,7 +277,7 @@ test('Check if dialog opens when offerButton is pressed', async ({ page }) => {
 
 test('Check presence of video element', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the video element to be present (adjust the selector and wait time as needed)
   const videoElement = await page.waitForSelector('#backgroundVideo', { timeout: 5000 });
@@ -288,7 +288,7 @@ test('Check presence of video element', async ({ page }) => {
 
 test('Navbar Menu Items Count', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the Menubar to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#navbar', { timeout: 5000 });
@@ -308,7 +308,7 @@ test('Navbar Menu Items Count', async ({ page }) => {
 
 test('Check presence of InputText element in the footer', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#contact-us', { timeout: 5000 });
@@ -322,7 +322,7 @@ test('Check presence of InputText element in the footer', async ({ page }) => {
 
 test('check "Our Story" in about us page', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/about');
+  await page.goto('https://razoredge.vercel.app/about');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('#storyImage', { visible: true });
@@ -334,7 +334,7 @@ test('check "Our Story" in about us page', async ({ page }) => {
 
 test('check "Our Vision" in about us page', async ({ page }) => {
   // Navigate to your Next.js website
-  await page.goto('http://localhost:3000/about');
+  await page.goto('https://razoredge.vercel.app/about');
 
   // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
   await page.waitForSelector('#visionSectionContainer', { visible: true });
@@ -346,7 +346,7 @@ test('check "Our Vision" in about us page', async ({ page }) => {
 
 test('Check presence and visibility of Cookie Banner', async ({ page }) => {
   // Navigate to your page
-  await page.goto('http://localhost:3000/');
+  await page.goto('https://razoredge.vercel.app/');
 
   // Wait for the Cookie Banner div to be rendered (adjust the selector and wait time as needed)
   await page.waitForSelector('#mainDivCookieBanner', { timeout: 5000 });
