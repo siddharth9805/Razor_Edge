@@ -3,7 +3,23 @@ import { useRouter } from 'next/router';
 import { Image } from 'primereact/image';
 import Nav from '@/component/nav';
 import Footer from '@/component/footer';
-import styles from '@/styles/about.module.css'
+import styles from '@/styles/about.module.css';
+import getDataInObject from "../lib/markdownReader";
+
+
+export async function getStaticProps({ params }) {
+    const siteContent = getDataInObject("./dynamic-content/aboutSiteContent");
+    const footerContent = getDataInObject("./dynamic-content/footerSectionContent");
+  
+    return {
+      props: {
+        siteContent,
+        footerContent
+      },
+    };
+  }
+  
+
 
 export default function About() {
     const homeRef = useRef(null);
