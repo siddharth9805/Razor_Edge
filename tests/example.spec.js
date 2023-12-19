@@ -1,19 +1,15 @@
-// @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+const websiteURL = 'http://localhost:3000/'
+const websiteTitle = 'Razor Edge'
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
+test('Check the title of Next.js website', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto(websiteURL);
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  // // Get the title of the page
+  const pageTitle = await page.title();
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  // Assert that the title is as expected
+  expect(pageTitle).toBe(websiteTitle);
 });
