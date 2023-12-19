@@ -68,7 +68,7 @@ export default function Main(){
                 </p>
             </Dialog>
             <h1 className={`${'sm:text-6xl text-center text-black-alpha-90 uppercase mt-7 mb-7'}`}>{headers[1]}</h1>
-            <div className='grid w-full mb-2 mt-2 sm:mb-7 sm:mt-7'>
+            <div id='testimonial' className='grid w-full mb-2 mt-2 sm:mb-7 sm:mt-7'>
                {
                 TestamonialList.map(({id, name, path, alt, message}) => (
                             <>
