@@ -242,4 +242,19 @@ test('Check presence of Button element inside div', async ({ page }) => {
   expect(button).toBeTruthy();
 });
 
+test('Check count of testimonialAuthorName p tags', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the testimonial div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#testimonial', { timeout: 5000 });
+
+  // Count the occurrences of p tags with id "testimonialAuthorName"
+  const count = await page.$$eval('#testimonial #testimonialAuthorName', (elements) => elements.length);
+
+  // Check if the count matches the expected value
+  const expectedCount = 3; // Replace with the expected count
+  expect(count).toBe(expectedCount);
+});
+
 
