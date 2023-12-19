@@ -320,4 +320,16 @@ test('Check presence of InputText element in the footer', async ({ page }) => {
   expect(inputText).toBeTruthy();
 });
 
+test('check "Our Story" in about us page', async ({ page }) => {
+  // Navigate to your Next.js website
+  await page.goto('http://localhost:3000/about');
+
+  // Wait for the hero section to be visible. Replace 'your-hero-section-selector' with the actual CSS selector for your hero section.
+  await page.waitForSelector('#storyImage', { visible: true });
+  const heroTitleTextContent = await page.$eval('#storyImage p', (p) => p.textContent);
+
+  // Check if the content matches the expected value
+  expect(heroTitleTextContent).toBe('Our Story');
+});
+
 
