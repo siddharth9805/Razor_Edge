@@ -31,7 +31,7 @@ export default function CookieBanner(){
 
     return (
         // Restructuring Cookie Banner and its Content as per Team Suggestions
-        <div className={`${`${cookieConsent ? "hidden" : "flex"} justify-content-center align-items-center bg-black-alpha-90 opacity-80 flex-column w-full fixed left-0 right-0`}  ${styles.CBContainer}`}>
+        <div id='mainDivCookieBanner' className={`${`${cookieConsent ? "hidden" : "flex"} justify-content-center align-items-center bg-black-alpha-90 opacity-80 flex-column w-full fixed left-0 right-0`}  ${styles.CBContainer}`}>
             <p id='CBContent'>This site uses cookies to measure and improve your performance.</p>
             <div className='flex flex-column sm:flex-row justify-content-between w-4 '>
                 <div className={'flex flex-row flex-wrap'}>
@@ -40,7 +40,7 @@ export default function CookieBanner(){
                 </div>
                         
                 <div>
-                    <Dialog header="COOKIE PREFERENCES" visible={visible} onHide={() => setVisible(false)}
+                    <Dialog id='policyBanner' header="COOKIE PREFERENCES" visible={visible} onHide={() => setVisible(false)}
                         style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
                         <p className="m-0">
                             <br/>

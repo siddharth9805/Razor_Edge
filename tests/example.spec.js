@@ -344,4 +344,22 @@ test('check "Our Vision" in about us page', async ({ page }) => {
   expect(heroTitleTextContent).toBe('Our Vision');
 });
 
+test('Check presence and visibility of Cookie Banner', async ({ page }) => {
+  // Navigate to your page
+  await page.goto('http://localhost:3000/');
+
+  // Wait for the Cookie Banner div to be rendered (adjust the selector and wait time as needed)
+  await page.waitForSelector('#mainDivCookieBanner', { timeout: 5000 });
+
+  // Check the presence of the Cookie Banner div
+  const cookieBannerDiv = await page.$('#mainDivCookieBanner');
+
+  // Check if the Cookie Banner div is present
+  expect(cookieBannerDiv).toBeTruthy();
+
+  // Check if the Cookie Banner div is visible
+  const isCookieBannerVisible = await page.isVisible('#mainDivCookieBanner');
+  expect(isCookieBannerVisible).toBeTruthy();
+});
+
 
