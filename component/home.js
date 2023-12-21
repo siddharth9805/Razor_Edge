@@ -6,8 +6,8 @@ import { Toast } from 'primereact/toast';
 import React, { useRef, useState } from 'react';
 
 export default function Home({ data }){
-    const header= 'Where style meets Precision'
-    const subheader = `Get Yourself Groomed for The New Year's Eve.... And Ring In 2024 With Unmatched Elegance !!`;
+    const header= data?.heroSectionContent?.header;
+    const subheader = data?.heroSectionContent?.subHeader;
     
     // useState for using Dialog
     const [visible, setVisible] = useState(false);

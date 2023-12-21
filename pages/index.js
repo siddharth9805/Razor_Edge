@@ -10,7 +10,6 @@ import { getDataInObject } from '../lib/markdownReader';
 
 export async function getStaticProps() {
   const markdownData = getDataInObject("./dynamic-content");
-  console.log(markdownData); // Debug
 
   return {
     props: {
@@ -48,12 +47,12 @@ export default function Salon({ data }) {
     <>
     <div className='overflow-x-hidden'>
       <div id='videoBGContainer' className={styles.backgroundFrame}>
-        <Nav id='navbar' onMenuClick={onMenuClick} />
-        <div id='heroSection' ref={homeRef}><Home /></div>
+        <Nav id='navbar' onMenuClick={onMenuClick}/>
+        <div id='heroSection' ref={homeRef}><Home data={data} /></div>
       </div>
       <MyCarousel id='brandSliderSection'/>
-        <div id='serviceSection' ref={servicesRef}><Main /></div>
-        <div id='footerSection' ref={contactUsRef}><Footer /></div>
+        <div id='serviceSection' ref={servicesRef}><Main data={data}/></div>
+        <div id='footerSection' ref={contactUsRef}><Footer data={data}/></div>
     </div>
     </>
   )

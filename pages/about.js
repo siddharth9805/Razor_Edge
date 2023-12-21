@@ -8,7 +8,6 @@ import { getDataInObject } from '../lib/markdownReader';
 
 export async function getStaticProps() {
   const markdownData = getDataInObject("./dynamic-content");
-  console.log(markdownData); // Debug
 
   return {
     props: {
@@ -51,7 +50,7 @@ export default function About({ data }) {
                     <div id='leftSectionContainer' className="flex flex-column p-4 w-full">
                         <h1 id='aboutSiteName'>{data?.aboutSiteContent?.siteNameText}</h1>
                         <p id='aboutContent' className='text-lg'>{data?.aboutSiteContent?.siteInfoText}</p>
-                        <p id='aboutContent' className='text-lg'>Embracing the hero within yourself, we transform styles with precision and flair.  Here, each snip and style is an epic adventure, crafting bold, empowering looks.  Join us, and unleash the hero within through every cut & colour.</p>
+                        <p id='aboutSubtextContent' className='text-lg'>{data?.aboutSiteContent?.anotherSiteInfoText}</p>
                         <div id='storyImage' className={`flex justify-content-aroung align-items-center`}>
                             <div className='flex flex-column justify-content-center align-items-center'>
                                 <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className='p-3'/>
@@ -59,14 +58,14 @@ export default function About({ data }) {
                             <div className='flex flex-column justify-content-start p-3'>
                                 <p id='storyTitle' className={`text-yellow-200 text-2xl`}>{data?.aboutSiteContent?.ourStoryHeading}</p>
                                 <p id='storySubTitle' className='text-lg'>{data?.aboutSiteContent?.ourStorySubHeading}</p>
-                                <p id='storyContext' className={`font-light text-lg`}>From humble beginnings to becoming a haven for beauty enthusiasts, our story is woven with passion, dedication, and a commitment to empowering individuals through self-expression.</p>
+                                <p id='storyContext' className={`font-light text-lg`}>{data?.aboutSiteContent?.ourStoryContent}</p>
                             </div>
                         </div>
                         <div id='visionSectionContainer' className="flex justify-content-aroung align-items-center">
                             <div id='visionContentContainer' className='flex flex-column justify-content-end'>
                                 <p id='visionTitle' className={`text-yellow-200 text-2xl`}>{data?.aboutSiteContent?.ourVisionHeading}</p>
                                 <p id='visionSubTitle' className='text-lg'>{data?.aboutSiteContent?.ourVisionSubHeading}</p>
-                                <p id='visionContext' className={`font-light text-lg`}>We believe in transformative experiences that go beyond aesthetics, fostering self-love and confidence. Our commitment is to redefine beauty standards and inspire individuals to embrace their uniqueness.</p>
+                                <p id='visionContext' className={`font-light text-lg`}>{data?.aboutSiteContent?.ourVisionContent}</p>
                             </div>
                             <div className='flex flex-column justify-content-center align-items-center'>
                                 <Image id='visionRelatedImage' src='/vision-img.png' alt='vision-img' className=''/>

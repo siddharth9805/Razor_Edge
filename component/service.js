@@ -7,37 +7,37 @@ export default function Main({ data }){
     const [visible,setVisible]= React.useState();
     const [services,setServices] = React.useState('');
     const [hoverStates, setHoverStates] = React.useState({});
-    const headers =['Service','READ WHAT OTHERS HAVE TO SAY'];
+    const headers =[data?.serviceSectionContent?.sectionTitleText,data?.testimonialSectionContent?.sectionTitle];
     const rating = <Image src='/5Star.png' alt='5start_rating'/>
 
     const ServiceList=[
-        {id:"service1", path:"/service_image_1.png", alt:"service_card_1", service_name:"HairWash"},
-        {id:"service2", path:"/service_image_2.png", alt:"service_card_2", service_name:"Facial"},
-        {id:"service3", path:"/service_image_3.png", alt:"service_card_3", service_name:"Skin Treatment"},
-        {id:"service4", path:"/service_image_4.png", alt:"service_card_4", service_name:"Hair Treatment"},
+        {id:"service1", path:"/service_image_1.png", alt:"service_card_1", service_name:data?.serviceSectionContent?.service1Text},
+        {id:"service2", path:"/service_image_2.png", alt:"service_card_2", service_name:data?.serviceSectionContent?.service2Text},
+        {id:"service3", path:"/service_image_3.png", alt:"service_card_3", service_name:data?.serviceSectionContent?.service3Text},
+        {id:"service4", path:"/service_image_4.png", alt:"service_card_4", service_name:data?.serviceSectionContent?.service4Text},
     ];
 
     const TestamonialList=[
         {
             id:"profile_1",
-            name: "Isla Bennett",
+            name: data?.testimonialSectionContent?.reviewer1Name,
             path:"/profile_1.png",
             alt:"profile_1",
-            message:`“Since I started using RE, I truly adore the how my hair feels! It smells amazing, and it's softer and healthier.”`
+            message:data?.testimonialSectionContent?.reviewer1Name,
         },
         {
             id:"profile_2",
-            name: "Aria Monroe",
+            name: data?.testimonialSectionContent?.reviewer2Name,
             path:"/profile_2.png",
             alt:"profile_2",
-            message:`“I've never had better hair care than this in my entire life. Game changer. I promise never to look back at other shit!”`
+            message:data?.testimonialSectionContent?.reviewer2Comment
         },
         {
             id:"profile_3",
-            name: "Sera Harper",
+            name: data?.testimonialSectionContent?.reviewer3Name,
             path:"/profile_3.png",
             alt:"profile_1",
-            message:`“Every product I have tried, I adore. They've all helped to create amazing curl, sheen, and volume.”`
+            message:data?.testimonialSectionContent?.reviewer3Comment
         }
     ];
 
@@ -61,10 +61,7 @@ export default function Main({ data }){
             </div>
             <Dialog id='serviceModal' header={services} visible={visible} className='w-11 sm:w-6' onHide={() => {setVisible(false)}}>
                 <p className="text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {data?.serviceSectionContent?.serviceModalText}
                 </p>
             </Dialog>
             <h1 className={`${'sm:text-6xl text-center text-black-alpha-90 uppercase mt-7 mb-7'}`}>{headers[1]}</h1>
