@@ -53,7 +53,7 @@ export default function About({ data }) {
                         <p id='aboutSubtextContent' className='text-lg'>{data?.aboutSiteContent?.anotherSiteInfoText}</p>
                         <div id='storyImage' className={`flex justify-content-aroung align-items-center`}>
                             <div className='flex flex-column justify-content-center align-items-center'>
-                                <Image id='storyRelatedImage' src='/story-img.png' alt='story-img' className='p-3'/>
+                                <Image id='storyRelatedImage' src='/story-img.webp' alt='story-img' className='p-3'/>
                             </div>
                             <div className='flex flex-column justify-content-start p-3'>
                                 <p id='storyTitle' className={`text-yellow-200 text-2xl`}>{data?.aboutSiteContent?.ourStoryHeading}</p>
@@ -68,11 +68,11 @@ export default function About({ data }) {
                                 <p id='visionContext' className={`font-light text-lg`}>{data?.aboutSiteContent?.ourVisionContent}</p>
                             </div>
                             <div className='flex flex-column justify-content-center align-items-center'>
-                                <Image id='visionRelatedImage' src='/vision-img.png' alt='vision-img' className=''/>
+                                <Image id='visionRelatedImage' src='/vision-img.webp' alt='vision-img' className=''/>
                             </div>
                         </div>   
                     </div>
-                    <Image id='rightSectionImage' src='/about-img.png' alt='about-img' className={`${styles.dynamicImage}`}/>
+                    <Image id='rightSectionImage' src='/about-img.webp' alt='about-img' className={`${styles.dynamicImage}`}/>
                 </div>
                 
                 <div id='footerSection' ref={contactUsRef}><Footer/></div>

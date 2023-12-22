@@ -3,7 +3,7 @@ import React from 'react';
 import { Image } from 'primereact/image';
 
 export default function Nav({onMenuClick}){
-    const logo=<Image src="/logoicon.png" alt="Logo" width={85} height={65}></Image>;
+    const logo=<Image src="/logoicon.webp" alt="Logo" width={85} height={65}></Image>;
     const nav_items=[
         {
             id:'home',

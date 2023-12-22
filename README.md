@@ -1,59 +1,35 @@
-# Razor Edge Salon Website
+# Razor Edge
+Razor Edge is a dynamic and user-centric website designed for the Web Systems Development class IS601, Fall 2023. 
+It is developed using Next.js, and stands as a testament to modern web development practices as well as innovative design.
 
-Welcome to the Razor Edge Salon Website! This README provides an overview of the project, its features, and how to get started.
+### Hero Section
+- **New Year Deal**: The hero section prominently features a 'View Offers' button, unveiling a special New Year deal for visitors.
+- **Dynamic Design**: Engaging visuals and interactive elements to captivate users.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-  - [1. Home Page](#1-home-page)
-  - [2. About Us Page](#2-about-us-page)
-  - [3. Offer Banner](#3-offer-banner)
-  - [4. Footer](#4-footer)
-  - [5. Cookie Consent Banner](#5-cookie-consent-banner)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+### Cookie Consent
+- **Privacy Compliance**: A cookie consent banner informs users about our page policy, ensuring transparency and adherence to privacy standards.
 
-## Overview
-The Razor Edge Salon Website is designed to showcase the salon's services, provide information about the team, and offer special deals to visitors. It is built using Next.js, a React framework, to ensure a seamless and responsive user experience.
-
-## Features
-
-### 1. Home Page
-- Dynamic and engaging hero section with a call-to-action button.
-- A Sliding Carousel displaying all the brand integrations / collaborations.
-- Services section highlighting the range of salon services.
-- Testimonials featuring positive feedback from clients.
-- Contact section with social media platform links for users to get in touch with.
-
-### 2. About Us Page
-- Navigation bar with an active link indicator.
-- Hero section with a compelling welcome message and salon image.
-- Our Story and Our Vision sections with detailed content.
-- Footer section with a newsletter subscription and social media links.
-
-### 3. Offer Banner
-- Eye-catching banner displaying limited-time offers.
-- Content dynamically sourced from a Markdown file for easy updates.
-- Users can subscribe to the newsletter to avail special discounts.
-
-### 4. Footer
-- Footer section with social media icons and contact information.
-- Users can subscribe to the newsletter for updates.
-- Copyright statement for company information.
-
-### 5. Cookie Consent Banner
-- Non-intrusive banner for cookie consent.
-- Two sections: one with content and buttons, the other with details and accept buttons.
-- Modal displaying Privacy Policy and Terms for acceptance.
+### About Us
+- **Our Story and Vision**: Detailed insights into the inspiration and goals behind Razor Edge, narrating our journey and future aspirations.
 
 ## Getting Started
-1. Clone the repository: `git clone https://github.com/your-username/razor-edge-salon.git`
-2. Install dependencies: `npm install`
-3. Run the development server: `npm run dev`
+1. **Prerequisites**: Node.js v18.0+.
+2. **Install Dependencies**: `npm install`.
+3. **Run Locally**: `npm run dev`.
+4. **Playwright Testing**: In a separate terminal, `npx playwright test`.
 
-## Contributing
-We welcome contributions to improve and enhance the Razor Edge Salon Website. Feel free to open issues, suggest features, or submit pull requests.
+## Documentation
+
+For in-depth Understanding, kindly visit our [MarkdownFiles Folder](https://github.com/ShhRey/SSN_IS601/tree/main/MarkdownFiles).
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## Contributions
+Contributors: Nachiket Tiwari, Siddharth Umachandar, and Shrey Trivedi. 
+
+---
+
+© 2023 Razor Edge Team

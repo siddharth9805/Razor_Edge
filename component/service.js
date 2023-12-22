@@ -8,34 +8,34 @@ export default function Main({ data }){
     const [services,setServices] = React.useState('');
     const [hoverStates, setHoverStates] = React.useState({});
     const headers =[data?.serviceSectionContent?.sectionTitleText,data?.testimonialSectionContent?.sectionTitle];
-    const rating = <Image src='/5Star.png' alt='5start_rating'/>
+    const rating = <Image src='/5Star.webp' alt='5start_rating'/>
 
     const ServiceList=[
-        {id:"service1", path:"/service_image_1.png", alt:"service_card_1", service_name:data?.serviceSectionContent?.service1Text},
-        {id:"service2", path:"/service_image_2.png", alt:"service_card_2", service_name:data?.serviceSectionContent?.service2Text},
-        {id:"service3", path:"/service_image_3.png", alt:"service_card_3", service_name:data?.serviceSectionContent?.service3Text},
-        {id:"service4", path:"/service_image_4.png", alt:"service_card_4", service_name:data?.serviceSectionContent?.service4Text},
+        {id:"service1", path:"/service_image_1.webp", alt:"service_card_1", service_name:data?.serviceSectionContent?.service1Text},
+        {id:"service2", path:"/service_image_2.webp", alt:"service_card_2", service_name:data?.serviceSectionContent?.service2Text},
+        {id:"service3", path:"/service_image_3.webp", alt:"service_card_3", service_name:data?.serviceSectionContent?.service3Text},
+        {id:"service4", path:"/service_image_4.webp", alt:"service_card_4", service_name:data?.serviceSectionContent?.service4Text},
     ];
 
     const TestamonialList=[
         {
             id:"profile_1",
             name: data?.testimonialSectionContent?.reviewer1Name,
-            path:"/profile_1.png",
+            path:"/profile_1.webp",
             alt:"profile_1",
             message:data?.testimonialSectionContent?.reviewer1Name,
         },
         {
             id:"profile_2",
             name: data?.testimonialSectionContent?.reviewer2Name,
-            path:"/profile_2.png",
+            path:"/profile_2.webp",
             alt:"profile_2",
             message:data?.testimonialSectionContent?.reviewer2Comment
         },
         {
             id:"profile_3",
             name: data?.testimonialSectionContent?.reviewer3Name,
-            path:"/profile_3.png",
+            path:"/profile_3.webp",
             alt:"profile_1",
             message:data?.testimonialSectionContent?.reviewer3Comment
         }
