@@ -83,7 +83,7 @@ export default function Home({ data }){
                         style={{ width: '50vw' }} breakpoints={{ '960px': '75vw', '641px': '100vw' }}>
                         <div id='bannerContainer' className="flex justify-content-around align-items-center w-full flex-wrap">
                             <div id='exclusiveOfferContent' className="flex align-items-center flex-column justify-content-center">
-                                <div className="text-center text-black-alpha-80 p-2 mt-2 w-10rem border-round-3xl bg-yellow-200 w-6 font-bold">{}</div>
+                                <div className="text-center text-black-alpha-80 p-2 mt-2 w-10rem border-round-3xl bg-yellow-200 w-6 font-bold">Exclusive Offer</div>
                                 <p>💥 Valid Until January 1st! 💥</p>
                                 <p className="text-center text-yellow-200 p-2 m-0 text-3xl">SAVE UP TO</p>
                                 <div className='flex align-items-center justify-content-center'>
