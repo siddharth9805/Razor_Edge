@@ -33,6 +33,13 @@ SEO (Search Engine Optimization) is crucial for ensuring your website is easily 
 - [Lighthouse Documentation](https://developers.google.com/web/tools/lighthouse)
 - [Google Search Console](https://search.google.com/search-console/about)
 
+
+
+
+### Final Report
+![Lighthouse and SEO Report for Home Page](image-7.png)
+![Lighthouse and SEO Report for About Page](image-8.png)
+
 ---
 
 **Note**: Regularly updating and auditing website's performance and SEO is key to maintaining a strong online presence.
