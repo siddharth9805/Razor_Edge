@@ -5,7 +5,8 @@
 This analysis is a part of final project for the "Web Systems Design" course in the Masters in Computer Science Program at NJIT. We are creating a salon website that will be later hosted on Vercel. This markdown file contains an analysis of the following websites, serving as a benchmark for our website development.
 
 
-### SWOT Analysis Table
+### SWOT Analysis Overview
+For details, kindly go through the document provided.
 
 | Website / Criteria      | TheCut                           | Tribe Hair Company (Hairy)       | Hair & Co BKLYN                  |
 |-------------------------|----------------------------------|----------------------------------|----------------------------------|
@@ -16,7 +17,8 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 
 
 
-### Competitive Analysis Table
+### Competitive Analysis Overivew
+For details, kindly go through the document provided.
 
 | Feature / Website         | Your Salon Website                                  | TheCut                         | Tribe Hair Company             | Hair & Co BKLYN                |
 |---------------------------|-----------------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
@@ -30,8 +32,6 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 | **Client Engagement**     | High engagement with interactive features           | High user engagement           | Exclusive client base          | Focuses on product sales       |
 | **Innovative Features**   | AI-based style recommendations, virtual try-on      | Schedule management tools      | None specific                  | Wide range of haircare products online |
 | **Market Segment**        | Wide demographic appeal                             | Barbers and barber clients     | High-end clientele             | Brooklyn residents and online shoppers |
-
-
 
 
 
@@ -105,6 +105,8 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 4. **Action:** Engaging in services and receiving personalized care.
 5. **Loyalty:** Repeat visits driven by quality and luxurious service experience.
 
+
+
 ## Hair & Co BKLYN [https://shop.hairandcobklyn.com]
 ## 1. Competitive Analysis
 
@@ -153,6 +155,8 @@ This analysis is a part of final project for the "Web Systems Design" course in 
 
 ### Loyalty
 - Ongoing engagement through product purchases and salon visits, fostered by the salon's strong local reputation and product range.
+
+
 
 ### Cartel Hair Studio Analysis
 

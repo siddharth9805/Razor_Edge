@@ -3,17 +3,17 @@ import styles from './css/carousel.module.css';
 
 export default function MyCarouse(){
     const items = [
-        <img id='sephora-img' src="/product_1.png" alt="product1-logo" />,
-        <img id='athr-img' src="/product_4.png" alt="product4-logo" />,
-        <img id='augustis-img' src="/product_5.png" alt="product5-logo" />,
-        <img id='aN-img' src="/product_6.png" alt="product6-logo" />,
-        <img id='albrey-img' src="/product_7.png" alt="product7-logo" />,
-        <img id='aveda-img' src="/product_8.png" alt="product8-logo" />,
-        <img id='sephora-img-dup' src="/product_1.png" alt="product1-logo" />,
-        <img id='athr-img-dup' src="/product_4.png" alt="product4-logo" />,
-        <img id='augustis-img-dup' src="/product_5.png" alt="product5-logo" />,
-        <img id='aN-img-dup' src="/product_6.png" alt="product6-logo" />,
-        <img id='albrey-img-dup' src="/product_7.png" alt="product7-logo" />,
+        <img id='sephora-img' src="/product_1.webp" alt="product1-logo" />,
+        <img id='athr-img' src="/product_4.webp" alt="product4-logo" />,
+        <img id='augustis-img' src="/product_5.webp" alt="product5-logo" />,
+        <img id='aN-img' src="/product_6.webp" alt="product6-logo" />,
+        <img id='albrey-img' src="/product_7.webp" alt="product7-logo" />,
+        <img id='aveda-img' src="/product_8.webp" alt="product8-logo" />,
+        <img id='sephora-img-dup' src="/product_1.webp" alt="product1-logo" />,
+        <img id='athr-img-dup' src="/product_4.webp" alt="product4-logo" />,
+        <img id='augustis-img-dup' src="/product_5.webp" alt="product5-logo" />,
+        <img id='aN-img-dup' src="/product_6.webp" alt="product6-logo" />,
+        <img id='albrey-img-dup' src="/product_7.webp" alt="product7-logo" />,
         
     ];
 

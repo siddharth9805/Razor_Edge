@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <title>Razor Edge</title>
       <body className='m-0'>
         <Main />
         <NextScript />

@@ -11,10 +11,11 @@ export default function App({ Component, pageProps }) {
   return (
     <PrimeReactProvider>
       <Head>
-      <link 
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" 
-          rel="stylesheet" 
-        />
+        <title>Razor Edge</title>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" 
+            rel="stylesheet" 
+          />
         <meta charset="UTF-8"></meta>
         <meta name="description" content="This a Salon marketing website"></meta>
         <meta name="keywords" content="Salon, salon haircut, bodycare, salon, barber website, skin care"></meta>
